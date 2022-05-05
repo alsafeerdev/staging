@@ -114,7 +114,7 @@ function my_custom_fonts()
 
 function add_custom_css_splide()
 {
-    wp_enqueue_style('owl-default-css', get_stylesheet_directory_uri() . '/includes/css/owl.carousel.min.css', true, true);
+    wp_enqueue_style('owl-default-css', get_stylesheet_directory_uri() . '/includes/css/min/owl.carousel.min.css', true, true);
     wp_enqueue_style('splide-theme-css', get_stylesheet_directory_uri() . '/includes/css/splide-theme.css', true, true);
 }
 add_action('wp_enqueue_scripts', 'add_custom_css_splide');
