@@ -1,28 +1,3 @@
-/* Cat Filter Styles */
-
-button.accordion-button.collapsed:hover {
-    background: none;
-    color: inherit;
-}
-
-button.accordion-button.collapsed {
-    background: none;
-    color: inherit;
-}
-
-.accordion-item {
-    border: none !important;
-}
-
-.accordion-button:not(.collapsed) {
-    color: inherit !important;
-    background: none !important;
-    box-shadow: none !important;
-}
-
-
-/* Cat Filter Styles END */
-
 /* OWL Carousel Default Theme */
 .owl-theme .owl-nav {
     margin-top: 10px;

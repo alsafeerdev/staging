@@ -1,0 +1,4 @@
+{
+    "es6-css-minify.enableAutoprefixer": false,
+    "es6-css-minify.minifyOnSave": "yes"
+}
