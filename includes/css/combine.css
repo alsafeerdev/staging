@@ -1,3 +1,13 @@
+button.accordion-button.collapsed:hover {
+    background: none;
+    color: inherit;
+}
+
+button.accordion-button.collapsed {
+    background: none;
+    color: inherit;
+}
+
 .accordion-item {
     border: none !important;
 }
@@ -53,6 +63,7 @@
     background: #C2C2C2;
     display: block;
     -webkit-backface-visibility: visible;
+    backface-visibility: visible;
     transition: opacity 200ms ease;
     border-radius: 30px;
 }
@@ -346,6 +357,7 @@ p.promo-category-title {
     background: #8F8F8F;
     display: block;
     -webkit-backface-visibility: visible;
+    backface-visibility: visible;
     transition: opacity 200ms ease;
     border-radius: 30px;
 }
