@@ -110,28 +110,6 @@ function my_custom_fonts()
   </style>';
 }
 
-/*
-// Custom Carrousal START
-function custom_carrousal_styles()
-{
-    wp_enqueue_style('owl-default-css', get_stylesheet_directory_uri() . '/includes/css/owl.carousel.min.css', true, true);
-    wp_enqueue_style('owl-theme-css', get_stylesheet_directory_uri() . '/includes/css/owl.theme.default.css', true, true);
-    wp_enqueue_style('custom-carrousal-styles', get_stylesheet_directory_uri() . '/includes/css/carrousal-styles.css', true, true);
-}
-add_action('wp_enqueue_scripts', 'custom_carrousal_styles');
-
-function custom_carrousal()
-{
-    wp_enqueue_script('owl-default-js', get_stylesheet_directory_uri() . '/includes/js/owl.carousel.min.js', array('jquery'), true, true);
-    wp_enqueue_script('owl-call-js', get_stylesheet_directory_uri() . '/includes/js/owl-call.js', array('jquery'), true, true);
-    ob_start();
-    get_template_part('includes/custom', 'carrousal');
-    return ob_get_clean();
-}
-add_shortcode('custom-carrousal', 'custom_carrousal');
-*/
-
-
 // Custom Slider for Portfolio 
 
 function add_custom_css_splide()
