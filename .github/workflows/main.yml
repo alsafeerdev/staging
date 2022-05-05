@@ -2,15 +2,17 @@ on: push
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
-    name: Deploy
-    runs-on: Alsafeer Staging Site
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
     steps:
-    - name: Get latest code
+    - name: 🚚 Get latest code
       uses: actions/checkout@v2
-    
+
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
-        server: ftp.samkirkland.com
-        username: myFtpUserName
-        password: ${{ secrets.ftp_password }}
+        server: ftp.alsafeeradvt.com
+        username: admin@alsafeeradvt.com
+        password: ${{ secrets.FTP_PASS }}
+        port: 21
+        server-dir: staging.alsafeeradvt.com/wp-content/themes/alsafeer-child-theme/
