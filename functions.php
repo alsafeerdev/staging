@@ -19,7 +19,7 @@ define('CHILD_THEME_ALSAFEER_PUBLISHING_ADVERTING_VERSION', '1.0.0');
  */
 function child_enqueue_styles()
 {
-    wp_enqueue_style('alsafeer-publishing-adverting-theme-css', get_stylesheet_directory_uri() . '/style.min.css', array('astra-theme-css'), CHILD_THEME_ALSAFEER_PUBLISHING_ADVERTING_VERSION, 'all');
+    wp_enqueue_style('alsafeer-publishing-adverting-theme-css', get_stylesheet_directory_uri() . '/style.css', array('astra-theme-css'), CHILD_THEME_ALSAFEER_PUBLISHING_ADVERTING_VERSION, 'all');
 }
 
 add_action('wp_enqueue_scripts', 'child_enqueue_styles', 15);
@@ -30,8 +30,8 @@ add_action('wp_enqueue_scripts', 'child_enqueue_styles', 15);
 
 function add_carousel_js()
 {
-    wp_enqueue_script('owl-default', get_stylesheet_directory_uri() . '/includes/js/owl.carousel.min.js', array('jquery'), true, true);
-    wp_enqueue_script('owl-call', get_stylesheet_directory_uri() . '/includes/js/owl-call.js', array('owl-default'), true, true);
+    wp_enqueue_script('owl-default', get_stylesheet_directory_uri() . '/includes/js/min/owl.carousel.min.js', array('jquery'), true, true);
+    wp_enqueue_script('owl-call', get_stylesheet_directory_uri() . '/includes/js/min/owl-call.min.js', array('owl-default'), true, true);
 }
 
 add_action('wp_enqueue_scripts', 'add_carousel_js');
@@ -42,7 +42,7 @@ add_action('wp_enqueue_scripts', 'add_carousel_js');
 function add_custom_css()
 {
     wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css', true, true);
-    wp_enqueue_style('product-grid-css', get_stylesheet_directory_uri() . '/includes/css/product-grid-styles.css', true, true);
+    wp_enqueue_style('product-grid-css', get_stylesheet_directory_uri() . '/includes/css/min/product-grid-styles.min.css', true, true);
 }
 add_action('wp_enqueue_scripts', 'add_custom_css');
 
@@ -50,7 +50,7 @@ add_action('wp_enqueue_scripts', 'add_custom_css');
 function product_grid()
 {
     wp_enqueue_script('bootstrap-JS', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js', array(), true, true);
-    wp_enqueue_script('cat-filter-js', get_stylesheet_directory_uri() . '/includes/js/cat-filter-scripts.js', array(), true, true);
+    wp_enqueue_script('cat-filter-js', get_stylesheet_directory_uri() . '/includes/js/min/cat-filter-scripts.min.js', array(), true, true);
     ob_start();
     get_template_part('includes/product', 'grid');
     return ob_get_clean();
@@ -115,7 +115,7 @@ function my_custom_fonts()
 function add_custom_css_splide()
 {
     wp_enqueue_style('owl-default-css', get_stylesheet_directory_uri() . '/includes/css/min/owl.carousel.min.css', true, true);
-    wp_enqueue_style('splide-theme-css', get_stylesheet_directory_uri() . '/includes/css/splide-theme.css', true, true);
+    wp_enqueue_style('splide-theme-css', get_stylesheet_directory_uri() . '/includes/css/min/splide-theme.min.css', true, true);
 }
 add_action('wp_enqueue_scripts', 'add_custom_css_splide');
 
@@ -136,7 +136,7 @@ add_shortcode('portfolio-slider', 'portfolio_slider');
 
 function add_custom_css_promotions_slider()
 {
-    wp_enqueue_style('promotions-slider-css', get_stylesheet_directory_uri() . '/includes/css/promotion-slider.css', true, true);
+    wp_enqueue_style('promotions-slider-css', get_stylesheet_directory_uri() . '/includes/css/min/promotion-slider.min.css', true, true);
 }
 add_action('wp_enqueue_scripts', 'add_custom_css_promotions_slider');
 
@@ -169,7 +169,7 @@ add_shortcode('promotions-sliderLightBG', 'promotions_slider_light_bg');
 
 function add_custom_css_services_slider()
 {
-    wp_enqueue_style('services-slider-css', get_stylesheet_directory_uri() . '/includes/css/services-slider.css', true, true);
+    wp_enqueue_style('services-slider-css', get_stylesheet_directory_uri() . '/includes/css/min/services-slider.min.css', true, true);
 }
 add_action('wp_enqueue_scripts', 'add_custom_css_services_slider');
 
@@ -204,7 +204,7 @@ add_shortcode('services-sliderDarkBG', 'services_slider_dark_bg');
 // CSS
 function add_custom_css_ajax_portfolio_grid()
 {
-    wp_enqueue_style('portfolio-grid-css', get_stylesheet_directory_uri() . '/includes/css/ajax-portfolio-grid.css', true, true);
+    wp_enqueue_style('portfolio-grid-css', get_stylesheet_directory_uri() . '/includes/css/min/ajax-portfolio-grid.min.css', true, true);
 }
 add_action('wp_enqueue_scripts', 'add_custom_css_ajax_portfolio_grid');
 
