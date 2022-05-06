@@ -220,4 +220,3 @@ function ajax_portfolio_grid()
 }
 
 add_shortcode('ajax-portfolio-grid', 'ajax_portfolio_grid');
-
