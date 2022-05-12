@@ -99,3 +99,21 @@ jQuery(document).ready(function () {
     navText: [jQuery('.prev-btn-serv-dark'), jQuery('.next-btn-serv-dark')],
   });
 });
+
+// Featured Products Carousal Dark BG
+
+jQuery(document).ready(function () {
+  jQuery("#feat-prods-carousel").owlCarousel({
+    loop: true,
+    margin: 65,
+    items: 4,
+    center: true,
+    dots: true,
+    autoplay: true,
+    nav: true,
+    autoplaySpeed: 2500,
+    slideTransition: 'ease',
+    stagePadding:35,
+    navText: [jQuery('.prev-btn-feat-prod-dark'), jQuery('.next-btn-feat-prod-dark')],
+  });
+});
