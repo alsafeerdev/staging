@@ -220,3 +220,14 @@ function ajax_portfolio_grid()
 }
 
 add_shortcode('ajax-portfolio-grid', 'ajax_portfolio_grid');
+
+// Featured Products Slider
+
+function featured_product_slider()
+{
+    ob_start();
+    get_template_part( 'includes/featuredProd', 'slider' );
+    return ob_get_clean();
+}
+
+add_shortcode( 'featured-product-slider', 'featured_product_slider' );
