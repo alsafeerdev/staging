@@ -105,6 +105,7 @@ jQuery(document).ready(function () {
 jQuery(document).ready(function () {
   jQuery("#feat-prods-carousel").owlCarousel({
     loop: true,
+    autoWidth: true,
     margin: 10,
     items: 4,
     center: true,
