@@ -12,8 +12,6 @@ $loop = new WP_Query($args); ?>
     <?php if ($loop->have_posts()) : ?>
         <?php while ($loop->have_posts()) :
             $loop->the_post(); ?>
-
-            <!-- Get Featured Image -->
             <?php $feat_image_url = get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>
             <?php
             $image_id = get_post_thumbnail_id();
