@@ -6,4 +6,7 @@ img.feat-prods-feat-image {
     border-radius: 100px 10px 0px 0px;
   }
 
-  
+  .feat-prods-content-container {
+    background: #ffffff;
+    padding: 26px 15px 45px 15px;
+}
