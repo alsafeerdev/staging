@@ -36,7 +36,8 @@ p.post-excerpt {
     letter-spacing: 0.05em;
     line-height: 24px;
     text-align: center;
-    content-visibility: auto;
+    min-height: 100px;
+
 }
 
 a.know-more {
