@@ -109,7 +109,7 @@ jQuery(document).ready(function () {
     items: 4,
     center: true,
     dots: true,
-    autoplay: true,
+    autoplay: false,
     nav: true,
     autoplaySpeed: 2500,
     slideTransition: 'ease',
