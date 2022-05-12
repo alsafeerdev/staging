@@ -33,3 +33,17 @@ p.feat-prods-exerpt {
     color: #3c3c3c;
     min-height: 100px;
 }
+
+p.feat-prods-know-more {
+    /* font-family: "PT Sans"; */
+    /* font-weight: bold; */
+    /* font-size: 16px; */
+    letter-spacing: 0.05em;
+    /* text-align: center; */
+    color: #fff;
+    border-radius: 30px;
+    background: #fd746c;
+    padding: 10px 20px;
+    /* width: fit-content; */
+    /* margin: 0; */
+}
