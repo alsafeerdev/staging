@@ -6,7 +6,7 @@ img.service-feat-image {
     padding: 26px 20px 36px 20px;
     border-radius: 0px 0px 10px 10px;
     background: #fff;
-  
+
 }
 
 .service-content.text-center {
@@ -72,7 +72,7 @@ p.service-know-more:hover {
     border-radius: 5px;
 }
 
-div.light  .owl-nav [class*='owl-']:hover {
+div.light .owl-nav [class*='owl-']:hover {
     background: #b7b7b7;
     border-radius: 5px;
 }
@@ -138,7 +138,7 @@ a.service-link {
     text-decoration: none !important;
 }
 
-.owl-stage-outer {
+div.services-carousel>.owl-stage-outer {
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -163,6 +163,7 @@ svg.dark-nav-icon {
     width: 10px;
     fill: #ffffff;
 }
+
 .dark-nav:hover>svg {
     fill: #000000;
 }

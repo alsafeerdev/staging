@@ -159,3 +159,8 @@ svg.promo-nav-main-light {
 div.dots-light .owl-dots .owl-dot span {
     background: #D1D1D1;
 }
+
+div.promotions-carousel > .owl-stage-outer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
