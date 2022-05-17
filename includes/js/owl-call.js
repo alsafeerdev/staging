@@ -138,3 +138,23 @@ jQuery(document).ready(function () {
     slideTransition: 'ease',
   });
 });
+
+// Products Carousel
+
+jQuery(document).ready(function () {
+  jQuery("#products-carousel").owlCarousel({
+    lazyLoad: true,
+    loop: true,
+    margin: 65,
+    items: 3,
+    center: true,
+    dots: true,
+    dotsEach: 3,
+    autoplay: true,
+    nav: true,
+    autoplaySpeed: 2500,
+    slideTransition: 'ease',
+    stagePadding:35,
+    navText: [jQuery('.prev-btn-prod'), jQuery('.next-btn-prod')],
+  });
+});
