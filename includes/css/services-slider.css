@@ -113,6 +113,10 @@ div.light .owl-nav [class*='owl-']:hover {
     transform: rotateY(180deg);
 }
 
+.prev-btn-prod.service-cust-nav {
+    transform: rotateY(180deg);
+}
+
 svg.service-nav-main {
     width: 10px;
     fill: #707070;
