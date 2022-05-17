@@ -57,3 +57,8 @@ div#feat-prods-carousel {
 div.owl-item.active img.feat-prods-feat-image:nth-child(4n) {
     min-height: 432px;
 }
+
+div#feat-prods-carousel.owl-carousel .owl-stage {
+    align-content: flex-end;
+    align-items: flex-end;
+}
