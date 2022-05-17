@@ -50,5 +50,6 @@ p.feat-prods-know-more {
 
 
 div#feat-prods-carousel {
-    padding: 0px 320px;
+    max-width: 71%;
+    margin: auto;
 }
