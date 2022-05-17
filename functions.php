@@ -232,3 +232,14 @@ function featured_product_slider()
 }
 
 add_shortcode( 'featured-product-slider', 'featured_product_slider' );
+
+// Products Slider
+
+function products_slider()
+{
+    ob_start();
+    get_template_part('includes/products', 'slider');
+    return ob_get_clean();
+}
+
+add_shortcode('products-slider', 'products_slider');
