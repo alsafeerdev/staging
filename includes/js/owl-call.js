@@ -30,7 +30,7 @@ jQuery(document).ready(function () {
     items: 3,
     center: true,
     dots: true,
-    dotsEach: 3,
+    dotsEach: 5,
     autoplay: true,
     nav: true,
     autoplaySpeed: 2500,
@@ -125,5 +125,16 @@ jQuery(document).ready(function () {
           items:4,
       }
   }
+  });
+});
+
+jQuery(document).ready(function () {
+  jQuery("#feat-prods-carousel").owlCarousel({
+    loop: true,
+    margin:5,
+    autoplay: false,
+    nav: true,
+    autoplaySpeed: 2500,
+    slideTransition: 'ease',
   });
 });
