@@ -62,3 +62,8 @@ div#feat-prods-carousel.owl-carousel .owl-stage {
     align-content: flex-end;
     align-items: flex-end;
 }
+
+img.feat-prods-feat-image {
+    min-height: 432px;
+    object-fit: cover;
+}
