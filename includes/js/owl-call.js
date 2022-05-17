@@ -105,14 +105,14 @@ jQuery(document).ready(function () {
 jQuery(document).ready(function () {
   jQuery("#feat-prods-carousel").owlCarousel({
     loop: true,
-    margin: 65,
+    margin: 10,
     items: 4,
     center: true,
     autoplay: true,
     nav: true,
     autoplaySpeed: 2500,
     slideTransition: 'ease',
-    stagePadding:35,
+    stagePadding:10,
     navText: [jQuery('.prev-btn-feat-prod-dark'), jQuery('.next-btn-feat-prod-dark')],
   });
 });
