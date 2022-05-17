@@ -107,7 +107,6 @@ jQuery(document).ready(function () {
     loop: true,
     margin: 10,
     items: 4,
-    center: true,
     autoplay: false,
     nav: true,
     autoplaySpeed: 2500,
