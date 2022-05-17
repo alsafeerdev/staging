@@ -2,7 +2,7 @@
 $args = array(
     'post_type' => 'services',
     'order' => 'ASC',
-    'orderby' => 'ID'
+    'orderby' => 'rand'
 );
 $loop = new WP_Query($args); ?>
 
