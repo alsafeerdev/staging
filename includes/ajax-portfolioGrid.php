@@ -19,7 +19,7 @@ foreach ( $terms as $term ) {
   <a href="' . $term_link .' " class="wrapper-link">
            
                 <div class="portfolio-catergory-grid-img-container">
-                    <img src="/wp-content/uploads/2022/04/Customized-USB-Featured-IMG.jpg" alt="" srcset="">
+                    <img class="portfolio-catergory-grid-img" src="/wp-content/uploads/2022/04/Customized-USB-Featured-IMG.jpg" alt="" srcset="">
                 </div>
 <div class="portfolio-catergory-grid-title-container">
  <h3 class="portfolio-catergory-grid">' . $term->name . '</h3>
