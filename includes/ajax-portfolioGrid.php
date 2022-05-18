@@ -16,7 +16,7 @@ foreach ( $terms as $term ) {
     }
 
   echo    '   <div class="col-lg-4 mb-4 portfolio-catergory-grid-item-container"> 
-  <a href="' . $term_link .' " class="wrapper-link">
+  <a href="' . $term_link .' " class="portfolio-catergory-grid-wrapper-link">
            
                 <div class="portfolio-catergory-grid-img-container">
                     <img class="portfolio-catergory-grid-img" src="/wp-content/uploads/2022/04/Customized-USB-Featured-IMG.jpg" alt="" srcset="">
