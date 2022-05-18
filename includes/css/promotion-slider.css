@@ -106,6 +106,7 @@ p.promo-category-title {
     background: #8F8F8F;
     display: block;
     -webkit-backface-visibility: visible;
+    backface-visibility: visible;
     transition: opacity 200ms ease;
     border-radius: 30px;
 }
