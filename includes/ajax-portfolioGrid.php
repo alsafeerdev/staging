@@ -19,7 +19,7 @@ foreach ( $terms as $term ) {
     // We successfully got a link. Print it out.
     echo '<div class="col-lg-3"><a href="' . esc_url( $term_link ) . '">' . $term->name . '</a></div>';
 }
-
+echo get_field();
 echo '</div>';
 
 ?>
