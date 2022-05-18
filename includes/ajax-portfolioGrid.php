@@ -15,7 +15,7 @@ foreach ( $terms as $term ) {
         continue;
     }
 
-  echo    '   <div class="col-lg-4 portfolio-catergory-grid-item-container"> 
+  echo    '   <div class="col-lg-4 mb-4 portfolio-catergory-grid-item-container"> 
   <a href="' . $term_link .' " class="wrapper-link">
            
                 <div class="portfolio-catergory-grid-img-container">
