@@ -21,6 +21,5 @@ foreach ( $terms as $term ) {
 }
 
 echo '</div>';
-
+echo '<img src="' . get_field(); .'" alt="">';
 ?>
-<img src="<?php echo get_field();?>" alt="">
