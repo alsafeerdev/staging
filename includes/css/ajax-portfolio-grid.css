@@ -1,6 +1,20 @@
 .portfolio-catergory-grid-title-container {
     background: #000000b3;
-    padding: 10px 0px;
+    padding: 10px 0;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+a.portfolio-catergory-grid-wrapper-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: center;
+    text-align: center;
+    align-items: stretch;
+    position: relative;
+    width: 100%;
 }
 
 h3.portfolio-catergory-grid {
@@ -11,4 +25,8 @@ h3.portfolio-catergory-grid {
     text-align: center;
     margin: 0;
     color: #fff;
+}
+
+img.portfolio-catergory-grid-img {
+    border-radius: 10px;
 }
