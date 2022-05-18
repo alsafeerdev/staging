@@ -56,7 +56,11 @@ a.portfolio-catergory-grid-wrapper-link {
     width: 100%;
 }
 
-a.portfolio-catergory-grid-wrapper-link:hover .portfolio-catergory-grid-container-overlay {
+a.portfolio-catergory-grid-wrapper-link:hover > .portfolio-catergory-grid-container-overlay {
     opacity: 0.5;
-    transition: all .06s ease-in-out;
+    transition: all .6s ease-in-out;
+}
+a.portfolio-catergory-grid-wrapper-link:hover > .portfolio-catergory-grid-title-container {
+    opacity: 0;
+    transition: all .6s ease-in-out;
 }
