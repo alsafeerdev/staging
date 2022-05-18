@@ -38,11 +38,12 @@ img.portfolio-catergory-grid-img {
     width: 100%;
     height: 100%;
     background: #000000;
-    opacity: 0;
     border-radius: 10px;
     position: absolute;
     top: 0;
     left: 0;
+    opacity: 0;
+    transition: all .06s ease-in-out;
 }
 
 a.portfolio-catergory-grid-wrapper-link {
@@ -56,6 +57,7 @@ a.portfolio-catergory-grid-wrapper-link {
     width: 100%;
 }
 
-a.portfolio-catergory-grid-wrapper-link:hover .portfolio-catergory-grid-container-overlay{
+a.portfolio-catergory-grid-wrapper-link:hover .portfolio-catergory-grid-container-overlay {
     opacity: 0.5;
+    transition: all .06s ease-in-out;
 }
