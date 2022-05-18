@@ -10,6 +10,9 @@ foreach ($terms as $term) {
     // The $term is an object, so we don't need to specify the $taxonomy.
     $term_link = get_term_link($term);
 
+
+    $thumbnail = get_field('featured_image', $term->taxonomy . '_' . $term->term_id);
+
     // If there was an error, continue to the next term.
     if (is_wp_error($term_link)) {
         continue;
@@ -20,7 +23,7 @@ foreach ($terms as $term) {
            
   <div class="portfolio-catergory-grid-content-wrapper">
   <div class="portfolio-catergory-grid-img-container">
-      <img class="portfolio-catergory-grid-img" src="/wp-content/uploads/2022/04/Customized-USB-Featured-IMG.jpg" alt="" srcset="">
+      <img class="portfolio-catergory-grid-img" src="' . $thumbnail .'" alt="" srcset="">
   </div>
   <div class="portfolio-catergory-grid-title-container">
       <h3 class="portfolio-catergory-grid">' . $term->name . '</h3>
@@ -39,3 +42,9 @@ echo '</div>';
 
 ?>
 
+<?php 
+
+// load thumbnail for this taxonomy term
+
+
+?>
