@@ -65,3 +65,7 @@ a.portfolio-catergory-grid-wrapper-link:hover .portfolio-catergory-grid-containe
 a.portfolio-catergory-grid-wrapper-link:hover{
     box-shadow: 0px 0px 20px -8px #323232;
 }
+
+.container-fluid.catergory-grid {
+    padding: 65px 380px;
+}
