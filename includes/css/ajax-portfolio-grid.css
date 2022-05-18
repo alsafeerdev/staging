@@ -59,7 +59,7 @@ a.portfolio-catergory-grid-wrapper-link {
 
 a.portfolio-catergory-grid-wrapper-link:hover .portfolio-catergory-grid-container-overlay {
     opacity: 0.5;
-    transition: all .6s ease-in-out;
+    transition: all .6s ease;
 }
 
 a.portfolio-catergory-grid-wrapper-link:hover{
