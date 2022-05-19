@@ -128,17 +128,6 @@ jQuery(document).ready(function () {
   });
 });
 
-jQuery(document).ready(function () {
-  jQuery("#feat-prods-carousel").owlCarousel({
-    loop: true,
-    margin:5,
-    autoplay: false,
-    nav: true,
-    autoplaySpeed: 2500,
-    slideTransition: 'ease',
-  });
-});
-
 // Products Carousel
 
 jQuery(document).ready(function () {
