@@ -108,6 +108,7 @@ jQuery(document).ready(function () {
     margin:5,
     autoplay: true,
     nav: true,
+    dots:false,
     autoplaySpeed: 2500,
     slideTransition: 'ease',
     navText: [jQuery('.prev-btn-feat-prod'), jQuery('.next-btn-feat-prod')],
