@@ -94,9 +94,19 @@ a.feat-prods-wrapper-link {
 }
 
 div.feat-prods-carousel .owl-nav {
-    position: absolute;
-    top: 25vh;
+    position: relative;
+    bottom: 30vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+#feat-prods-carousel button.owl-prev {
+    position: relative;
+    right: 45px;
+}
+
+#feat-prods-carousel button.owl-next {
+    position: relative;
+    left: 35px;
 }
