@@ -94,7 +94,7 @@ a.feat-prods-wrapper-link {
 }
 
 div.feat-prods-carousel .owl-nav {
-    position: relative;
+    position: absolute;
     bottom: 30vh;
     width: 100%;
     display: flex;
