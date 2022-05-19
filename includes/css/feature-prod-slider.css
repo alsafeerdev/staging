@@ -73,3 +73,7 @@ a.feat-prods-wrapper-link {
     text-decoration: none !important;
 }
 
+#feat-prods-carousel div.owl-dots {
+    display: none;
+}
+
