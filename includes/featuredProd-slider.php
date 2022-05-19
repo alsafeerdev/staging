@@ -42,7 +42,6 @@ $loop = new WP_Query($args); ?>
 	c0,25.2,9.8,48.9,27.7,66.8c17.8,17.8,41.6,27.7,66.8,27.7c25.2,0,48.9-9.8,66.8-27.7l403.6-403.6c9.3-9.3,16.4-20.2,21.2-32.4
 	c4.5-11.5,6.7-23.7,6.4-36.1C592.4,487.4,590.3,475.2,585.8,463.7z" />
     </svg>
-
 </div>
 <div class="prev-btn-feat-prod feat-prods-cust-nav">
     <svg version="1.1" id="nav-prev-feat-prod" class="nav-main" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 592 1000" style="enable-background:new 0 0 592 1000;" xml:space="preserve">
@@ -51,9 +50,5 @@ $loop = new WP_Query($args); ?>
 	c0,25.2,9.8,48.9,27.7,66.8c17.8,17.8,41.6,27.7,66.8,27.7c25.2,0,48.9-9.8,66.8-27.7l403.6-403.6c9.3-9.3,16.4-20.2,21.2-32.4
 	c4.5-11.5,6.7-23.7,6.4-36.1C592.4,487.4,590.3,475.2,585.8,463.7z" />
     </svg>
-
 </div>
-
-
-
 <?php wp_reset_postdata(); ?>
