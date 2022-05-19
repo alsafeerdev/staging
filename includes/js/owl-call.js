@@ -108,7 +108,6 @@ jQuery(document).ready(function () {
     margin:5,
     autoplay: true,
     nav: true,
-    dots:false,
     autoplaySpeed: 2500,
     slideTransition: 'ease',
     navText: [jQuery('.prev-btn-feat-prod-dark'), jQuery('.next-btn-feat-prod-dark')],
@@ -122,7 +121,7 @@ jQuery(document).ready(function () {
       1000:{
           items:4,
       }
-  }
+  },
   });
 });
 
