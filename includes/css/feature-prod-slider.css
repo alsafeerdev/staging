@@ -1,12 +1,12 @@
-.feat-prods-container{
+.feat-prods-container {
     max-width: 375px;
 }
 
 img.feat-prods-feat-image {
     border-radius: 100px 10px 0px 0px;
-  }
+}
 
-  .feat-prods-content-container {
+.feat-prods-content-container {
     background: #ffffff;
     padding: 26px 15px 45px 15px;
     display: flex;
@@ -15,6 +15,7 @@ img.feat-prods-feat-image {
     align-items: center;
     justify-content: flex-start;
 }
+
 h3.feat-prods-title {
     font-family: "PT Serif";
     font-weight: bold;
@@ -66,4 +67,8 @@ div#feat-prods-carousel.owl-carousel .owl-stage {
 img.feat-prods-feat-image {
     min-height: 432px;
     object-fit: cover;
+}
+
+a.feat-prods-wrapper-link {
+    text-decoration: none !important;
 }
