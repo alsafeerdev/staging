@@ -13,6 +13,7 @@ $loop = new WP_Query($args); ?>
             $loop->the_post(); ?>
             <div class="clients-logo-container">
                 <div class="client-logo-img-container">
+                    <p><?php the_title( ); ?></p>
                     <img src="<?php get_field('client_logo'); ?>" alt="" srcset="">
                 </div>
             </div>
