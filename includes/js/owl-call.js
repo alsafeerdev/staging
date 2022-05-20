@@ -35,7 +35,7 @@ jQuery(document).ready(function () {
     nav: true,
     autoplaySpeed: 2500,
     slideTransition: 'ease',
-    stagePadding:35,
+    stagePadding: 35,
     navText: [jQuery('.prev-btn'), jQuery('.next-btn')],
   });
 });
@@ -55,7 +55,7 @@ jQuery(document).ready(function () {
     nav: true,
     autoplaySpeed: 2500,
     slideTransition: 'ease',
-    stagePadding:35,
+    stagePadding: 35,
     navText: [jQuery('.prev-btn-light'), jQuery('.next-btn-light')],
   });
 });
@@ -75,7 +75,7 @@ jQuery(document).ready(function () {
     nav: true,
     autoplaySpeed: 2500,
     slideTransition: 'ease',
-    stagePadding:35,
+    stagePadding: 35,
     navText: [jQuery('.prev-btn-serv'), jQuery('.next-btn-serv')],
   });
 });
@@ -95,7 +95,7 @@ jQuery(document).ready(function () {
     nav: true,
     autoplaySpeed: 2500,
     slideTransition: 'ease',
-    stagePadding:35,
+    stagePadding: 35,
     navText: [jQuery('.prev-btn-serv-dark'), jQuery('.next-btn-serv-dark')],
   });
 });
@@ -105,24 +105,24 @@ jQuery(document).ready(function () {
 jQuery(document).ready(function () {
   jQuery("#feat-prods-carousel").owlCarousel({
     loop: true,
-    margin:5,
+    margin: 5,
     autoplay: true,
     nav: true,
-    dots:false,
+    dots: false,
     autoplaySpeed: 2500,
     slideTransition: 'ease',
     navText: [jQuery('.prev-btn-feat-prod'), jQuery('.next-btn-feat-prod')],
-    responsive:{
-      0:{
-          items:1,
+    responsive: {
+      0: {
+        items: 1,
       },
-      600:{
-          items:3,
+      600: {
+        items: 3,
       },
-      1000:{
-          items:4,
+      1000: {
+        items: 4,
       }
-  },
+    },
   });
 });
 
@@ -141,7 +141,7 @@ jQuery(document).ready(function () {
     nav: true,
     autoplaySpeed: 2500,
     slideTransition: 'ease',
-    stagePadding:35,
+    stagePadding: 35,
     navText: [jQuery('.prev-btn-prod'), jQuery('.next-btn-prod')],
   });
 });
@@ -152,7 +152,6 @@ jQuery(document).ready(function () {
     lazyLoad: true,
     items: 5,
     loop: true,
-    margin: 10,
     center: true,
     dots: true,
     dotsEach: false,
