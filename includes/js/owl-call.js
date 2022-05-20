@@ -145,3 +145,22 @@ jQuery(document).ready(function () {
     navText: [jQuery('.prev-btn-prod'), jQuery('.next-btn-prod')],
   });
 });
+
+
+jQuery(document).ready(function () {
+  jQuery("#clients-carousel").owlCarousel({
+    lazyLoad: true,
+    loop: true,
+    margin: 10,
+    center: true,
+    dots: true,
+    dotsEach: 5,
+    autoplay: true,
+    nav: true,
+    autoplayTimeout: 3000,
+    autoplaySpeed: 3000,
+    slideTransition: 'linear',
+    stagePadding:35,
+    navText: [jQuery('.prev-btn-clients'), jQuery('.next-btn-clients')],
+  });
+});
