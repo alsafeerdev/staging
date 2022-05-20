@@ -1,8 +1,6 @@
 <?php
 $args = array(
     'post_type' => 'clients_logo',
-    'order' => 'ASC',
-    'orderby' => 'ID'
 );
 $loop = new WP_Query($args); ?>
 
