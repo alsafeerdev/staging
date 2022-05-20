@@ -27,11 +27,22 @@ div.clients-carousel .owl-dots {
     align-items: center;
     padding: 10px !important;
 }
+
 div.clients-carousel .owl-nav {
     position: absolute;
-    bottom: 30vh;
+    bottom: 10vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#clients-carousel button.owl-prev {
+    position: relative;
+    right: 45px;
+}
+
+#clients-carousel button.owl-next {
+    position: relative;
+    left: 35px;
 }
