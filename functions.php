@@ -261,7 +261,7 @@ add_action('wp_enqueue_scripts', 'clients_carousel_css');
 function clients_carousel()
 {
     ob_start();
-    get_template_part( 'includes/clients', 'carosel' );
+    get_template_part( 'includes/clients', 'carousel' );
     return ob_get_clean();
 }
 
