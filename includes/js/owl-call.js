@@ -150,6 +150,7 @@ jQuery(document).ready(function () {
 jQuery(document).ready(function () {
   jQuery("#clients-carousel").owlCarousel({
     lazyLoad: true,
+    items: 5,
     loop: true,
     margin: 10,
     center: true,
