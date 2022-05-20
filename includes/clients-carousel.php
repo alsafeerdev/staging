@@ -12,7 +12,6 @@ $loop = new WP_Query($args); ?>
         <div class="clients-logo-container">
             <div class="client-logo-img-container">
                 <p><?php the_title(); ?></p>
-
             </div>
         </div>
 
