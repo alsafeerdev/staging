@@ -3,3 +3,8 @@ img.client-logo {
     width: 360px;
     height: 120px;
 }
+
+.clients-carousel .owl-theme .owl-nav [class*='owl-']:hover {
+    background: #707070;
+    border-radius: 5px;
+}
