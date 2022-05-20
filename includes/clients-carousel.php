@@ -6,7 +6,7 @@ $args = array(
 );
 $loop = new WP_Query($args); ?>
 
-<div id="clients-carousel" class="owl-carousel owl-theme clients-carousel">
+<div id="clients-carousel" class="owl-carousel owl-theme clients-carousel dark-dots">
 
     <?php if ($loop->have_posts()) : ?>
         <?php while ($loop->have_posts()) :

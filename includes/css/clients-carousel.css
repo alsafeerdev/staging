@@ -7,3 +7,9 @@ svg.nav-main-clients-logo {
     width: 10px;
     fill: #707070;
 }
+.prev-btn-clients.clients-cust-nav {
+    transform: rotateY(180deg);
+}
+div.dark-dots .owl-dots .owl-dot span {
+    background: #8F8F8F;
+}
