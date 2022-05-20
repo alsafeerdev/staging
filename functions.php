@@ -43,7 +43,7 @@ function add_custom_css()
 {
     wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css', true, true);
     wp_enqueue_style('product-grid-css', get_stylesheet_directory_uri() . '/includes/css/min/product-grid-styles.min.css', true, true);
-    wp_enqueue_style( 'featured-prod-slider', get_stylesheet_directory_uri() . '/includes/css/min/feature-prod-slider.min.css', true, true, );
+    wp_enqueue_style('featured-prod-slider', get_stylesheet_directory_uri() . '/includes/css/min/feature-prod-slider.min.css', true, true,);
 }
 add_action('wp_enqueue_scripts', 'add_custom_css');
 
@@ -227,11 +227,11 @@ add_shortcode('ajax-portfolio-grid', 'ajax_portfolio_grid');
 function featured_product_slider()
 {
     ob_start();
-    get_template_part( 'includes/featuredProd', 'slider' );
+    get_template_part('includes/featuredProd', 'slider');
     return ob_get_clean();
 }
 
-add_shortcode( 'featured-product-slider', 'featured_product_slider' );
+add_shortcode('featured-product-slider', 'featured_product_slider');
 
 // Products Slider
 
@@ -243,3 +243,26 @@ function products_slider()
 }
 
 add_shortcode('products-slider', 'products_slider');
+
+
+// Clients Carousel
+
+// Add Styles
+
+function clients_carousel_css()
+{
+    wp_enqueue_style('clients-carousel', get_stylesheet_directory_uri() . '/includes/css/min/clients-carousel.min.css', true, true);
+}
+
+add_action('wp_enqueue_scripts', 'clients_carousel_css');
+
+// Register Short code
+
+function clients_carousel()
+{
+    ob_start();
+    get_template_part( 'includes/clients', 'carosel' );
+    return ob_get_clean();
+}
+
+add_shortcode( 'clients-carousel', 'clients_' )
