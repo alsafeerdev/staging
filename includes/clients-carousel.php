@@ -6,23 +6,21 @@ $args = array(
 );
 $loop = new WP_Query($args); ?>
 
-<div id="clients-carousel" class="owl-carousel owl-theme clients-carousel">
+<?php if ($loop->have_posts()) : ?>
+    <?php while ($loop->have_posts()) :
+        $loop->the_post(); ?>
+        <div class="clients-logo-container">
+            <div class="client-logo-img-container">
+                <p><?php the_title(); ?></p>
 
-    <?php if ($loop->have_posts()) : ?>
-        <?php while ($loop->have_posts()) :
-            $loop->the_post(); ?>
-            <div class="clients-logo-container">
-                <div class="client-logo-img-container">
-                    <p><?php the_title( ); ?></p>
-                   
-                </div>
             </div>
+        </div>
 
 
 
-        <?php endwhile; ?>
-    <?php endif; ?>
-</div>
+
+    <?php endwhile; ?>
+<?php endif; ?>
 
 
 
