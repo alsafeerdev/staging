@@ -265,4 +265,4 @@ function clients_carousel()
     return ob_get_clean();
 }
 
-add_shortcode( 'clients-carousel', 'clients_' );
+add_shortcode( 'clients-carousel', 'clients_carousel' );
