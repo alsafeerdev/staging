@@ -13,3 +13,7 @@ svg.nav-main-clients-logo {
 div.dark-dots .owl-dots .owl-dot span {
     background: #8F8F8F;
 }
+
+div.clients-carousel .owl-dots {
+    margin-top: 60px;
+}
