@@ -156,11 +156,11 @@ jQuery(document).ready(function () {
     center: true,
     dots: true,
     dotsEach: 5,
-    autoplay: false,
+    autoplay: true,
     nav: true,
-    // autoplayTimeout: 3000,
-    // autoplaySpeed: 3000,
-    // slideTransition: 'linear',
+    autoplayTimeout: 3000,
+    autoplaySpeed: 3000,
+    slideTransition: 'linear',
     navText: [jQuery('.prev-btn-clients'), jQuery('.next-btn-clients')],
   });
 });
