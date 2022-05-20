@@ -155,7 +155,7 @@ jQuery(document).ready(function () {
     margin: 10,
     center: true,
     dots: true,
-    dotsEach: 5,
+    dotsEach: 3,
     autoplay: true,
     nav: true,
     autoplayTimeout: 3000,
