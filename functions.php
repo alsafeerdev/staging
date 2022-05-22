@@ -277,7 +277,8 @@ add_action('wp_enqueue_scripts', 'synced_slider_css');
 
 // Register Shortcode and JS
 
-function synced_slider_gallery(){
+function synced_slider_gallery()
+{
     wp_enqueue_script('synced-slider-scripts', get_stylesheet_directory_uri() . '/includes/js/min/synced-slider.min.js', array('owl-default'), true, true);
 }
 add_shortcode( 'synced-slider', 'synced_slider_gallery' );
