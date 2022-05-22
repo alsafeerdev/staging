@@ -7,8 +7,8 @@ if ($images) : ?>
         <div id="big" class="synced-slider-main-img owl-carousel owl-theme big-image-carousel">
             <?php foreach ($images as $image) : ?>
                 <div class="big-image-carousel-item">
-                <?php echo wp_get_attachment_image(array("class" => "synced-big-img"));  ?>
-                    
+
+                    <img class="synced-big-img" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 
                 </div>
             <?php endforeach; ?>
@@ -20,10 +20,7 @@ if ($images) : ?>
             <?php foreach ($images as $image) : ?>
                 <div class="thumbnail-carousel-item">
 
-
-                    <?php echo wp_get_attachment_image(array("class" => "synced-thumb-img"));  ?>
-
-                  
+                    <img class="synced-thumb-img" src="<?php echo esc_url($image['sizes']['thumbnail']); ?>" alt="Thumbnail of <?php echo esc_url($image['alt']); ?>" />
 
                 </div>
             <?php endforeach; ?>
