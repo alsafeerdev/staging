@@ -15,3 +15,24 @@ img.synced-thumb-img {
 .big-image-carousel-item {
     padding: 10px;
 }
+
+.owl-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button.owl-prev {
+    transform: rotateY(180deg);
+}
+
+#big button.owl-prev {
+    position: relative;
+    right: 45px;
+}
+
+#big button.owl-next {
+    position: relative;
+    left: 35px;
+}
