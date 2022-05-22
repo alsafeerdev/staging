@@ -48,3 +48,7 @@ div.white-h-bg .owl-nav [class*='owl-']:hover {
     align-items: center;
     padding: 10px!important;
 }
+
+img.synced-big-img {
+    border-radius: 10px;
+}
