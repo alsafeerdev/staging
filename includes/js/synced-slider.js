@@ -27,9 +27,6 @@ jQuery(document).ready(function() {
     })
       .owlCarousel({
       items: 6,
-      dots: true,
-      nav: true,
-      navText: [jQuery('.prev-btn-thumb-img'), jQuery('.next-btn-thumb-img')],
       smartSpeed: 200,
       slideSpeed: 500,
       slideBy: 4,
