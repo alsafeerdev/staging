@@ -280,5 +280,9 @@ add_action('wp_enqueue_scripts', 'synced_slider_css');
 function synced_slider_gallery()
 {
     wp_enqueue_script('synced-slider-scripts', get_stylesheet_directory_uri() . '/includes/js/min/synced-slider.min.js', array('owl-default'), true, true);
+    ob_start();
+    get_template_part( 'includes/synced', 'slider' );
+    return ob_get_clean();
+}
 }
 add_shortcode( 'synced-slider', 'synced_slider_gallery' );
