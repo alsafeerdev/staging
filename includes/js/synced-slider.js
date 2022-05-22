@@ -30,7 +30,6 @@ jQuery(document).ready(function() {
     })
       .owlCarousel({
       items: 6,
-      center:true,
       dots: true,
       nav: true,
       navText: [
