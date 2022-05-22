@@ -266,3 +266,19 @@ function clients_carousel()
 }
 
 add_shortcode( 'clients-carousel', 'clients_carousel' );
+
+// Synced Slider Gallery 
+
+function synced_slider_css()
+{
+    wp_enqueue_style( 'synced-slider-styles', get_stylesheet_directory_uri() . '/includes/css/min/synced-slider.min.css', , true, true );
+}
+add_action('wp_enqueue_scripts', 'synced_slider_css');
+
+// Register Shortcode and JS
+
+function synced_slider_gallery(){
+    wp_enqueue_script('synced-slider-scripts', get_stylesheet_directory_uri() . '/includes/js/min/synced-slider.min.js', array('owl-default'), true, true);
+
+}
+add_shortcode( 'synced-slider', 'synced_slider_gallery' );
