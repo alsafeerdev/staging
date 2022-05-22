@@ -284,5 +284,4 @@ function synced_slider_gallery()
     get_template_part( 'includes/synced', 'slider' );
     return ob_get_clean();
 }
-}
 add_shortcode( 'synced-slider', 'synced_slider_gallery' );
