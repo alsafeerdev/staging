@@ -3,9 +3,9 @@ $images = get_field('gallery_items');
 $size = 'full'; // (thumbnail, medium, large, full or custom size)
 if ($images) : ?>
 
-    <?php foreach ($images as $image_id) : ?>
+    <?php foreach ($images as $image) : ?>
 
-        <img src="<?php echo get_field('gallery_items'); ?>" alt="" srcset="">
+        <img src="<?php echo $images ?>" alt="" srcset="">
 
 
     <?php endforeach; ?>
