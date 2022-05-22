@@ -12,6 +12,7 @@ img.synced-thumb-img {
     border: 5px solid #fd746c;
     box-shadow: 0px 0px 11px 0px #0000009c;
 }
+
 .big-image-carousel-item {
     padding: 10px;
 }
@@ -25,13 +26,10 @@ img.synced-thumb-img {
     bottom: 50%;
 }
 
-button.owl-prev {
-    transform: rotateY(180deg);
-}
-
 #big button.owl-prev {
     position: relative;
     right: -35px;
+    transform: rotateY(180deg);
 }
 
 #big button.owl-next {
