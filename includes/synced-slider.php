@@ -7,8 +7,8 @@ if ($images) : ?>
         <div id="big" class="synced-slider-main-img owl-carousel owl-theme big-image-carousel">
             <?php foreach ($images as $image) : ?>
                 <div class="big-image-carousel-item">
-
-                    <img class="synced-big-img" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                <?php echo wp_get_attachment_image(get_the_ID(), array(), "", array("class" => "synced-big-img"));  ?>
+                    
 
                 </div>
             <?php endforeach; ?>
