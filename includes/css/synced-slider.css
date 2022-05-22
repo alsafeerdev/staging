@@ -53,3 +53,6 @@ img.synced-big-img {
     border-radius: 10px;
 }
 
+.thumbnail-carousel .owl-dots {
+    display: none;
+}
