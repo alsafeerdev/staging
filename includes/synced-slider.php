@@ -7,7 +7,7 @@ if ($images) : ?>
         <div id="big" class="synced-slider-main-img owl-carousel owl-theme big-image-carousel">
             <?php foreach ($images as $image) : ?>
                 <div class="big-image-carousel-item">
-                <?php echo wp_get_attachment_image(get_the_ID(), array(), "", array("class" => "synced-big-img"));  ?>
+                <?php echo wp_get_attachment_image(array("class" => "synced-big-img"));  ?>
                     
 
                 </div>
@@ -21,7 +21,7 @@ if ($images) : ?>
                 <div class="thumbnail-carousel-item">
 
 
-                    <?php echo wp_get_attachment_image(get_the_ID(), array(), "", array("class" => "synced-thumb-img"));  ?>
+                    <?php echo wp_get_attachment_image(array("class" => "synced-thumb-img"));  ?>
 
                   
 
