@@ -12,6 +12,7 @@ jQuery(document).ready(function() {
       dots: false,
       loop: true,
       autoHeight:true,
+      margin:10,
       responsiveRefreshRate: 200,
       navText: [
         '<i class="fa fa-arrow-left" aria-hidden="true"></i>',
