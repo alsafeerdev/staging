@@ -13,7 +13,7 @@ if ($images) : ?>
     ?>
     <?php foreach ($images as $image_id) : ?>
 
-        <img src="<?php echo $imgurl ?>" alt="" srcset="">
+        <img src="<?php return $imgurl ?>" alt="" srcset="">
 
 
     <?php endforeach; ?>
