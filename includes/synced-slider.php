@@ -1,25 +1,12 @@
-<?php
-$args = array(
-    'post_type' => 'portfolio_items',
-    'order' => 'ASC',
-    'orderby' => 'ID'
-);
-$loop = new WP_Query($args); ?>
-
-<div class="main-image-carousel">
-
-    <?php if ($loop->have_posts()) : ?>
-        <?php while ($loop->have_posts()) :
-            $loop->the_post(); ?>
-
-            <?php the_title() ?>
-
-
-        <?php endwhile; ?>
-    <?php endif; ?>
-
-</div>
-
-
-
-<?php wp_reset_postdata(); ?>
+<?php 
+$images = get_field('gallery_items');
+$size = 'full'; // (thumbnail, medium, large, full or custom size)
+if( $images ): ?>
+    <ul>
+        <?php foreach( $images as $image_id ): ?>
+            <li>
+                <?php echo wp_get_attachment_image( $image_id, $size ); ?>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+<?php endif; ?>
