@@ -11,11 +11,13 @@ $loop = new WP_Query($args); ?>
     <?php if ($loop->have_posts()) : ?>
         <?php while ($loop->have_posts()) :
             $loop->the_post(); ?>
-            <div class="clients-logo-container">
-                <div class="client-logo-img-container">
-                    <img src="<?php echo get_field('client_logo'); ?>" alt="" class="client-logo">
+            <a href="/our-clients/" class="client-image-wrapper-link">
+                <div class="clients-logo-container">
+                    <div class="client-logo-img-container">
+                        <img src="<?php echo get_field('client_logo'); ?>" alt="" class="client-logo">
+                    </div>
                 </div>
-            </div>
+            </a>
         <?php endwhile; ?>
     <?php endif; ?>
 </div>
