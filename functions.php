@@ -44,7 +44,7 @@ function add_custom_css()
     wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css', true, true);
     wp_enqueue_style('product-grid-css', get_stylesheet_directory_uri() . '/includes/css/min/product-grid-styles.min.css', true, true);
     wp_enqueue_style('featured-prod-slider', get_stylesheet_directory_uri() . '/includes/css/min/feature-prod-slider.min.css', true, true,);
-    wp_enqueue_style('common', get_stylesheet_directory_uri() . '/includes/css/min/combine.min.css', true, true,);
+    wp_enqueue_style('combines-styles', get_stylesheet_directory_uri() . '/includes/css/min/combine.min.css', true, true,);
 }
 add_action('wp_enqueue_scripts', 'add_custom_css');
 
