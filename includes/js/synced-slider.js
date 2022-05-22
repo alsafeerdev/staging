@@ -14,10 +14,7 @@ jQuery(document).ready(function() {
       autoHeight:true,
       margin:10,
       responsiveRefreshRate: 200,
-      navText: [
-        '<i class="fa fa-arrow-left" aria-hidden="true"></i>',
-        '<i class="fa fa-arrow-right" aria-hidden="true"></i>'
-      ]
+      navText: [jQuery('.prev-btn-big-img'), jQuery('.next-btn-big-img')]
     })
       .on("changed.owl.carousel", syncPosition);
   
