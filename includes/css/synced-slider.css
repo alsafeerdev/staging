@@ -21,6 +21,8 @@ img.synced-thumb-img {
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
+    bottom: 50%;
 }
 
 button.owl-prev {
@@ -29,10 +31,10 @@ button.owl-prev {
 
 #big button.owl-prev {
     position: relative;
-    right: 45px;
+    right: -35px;
 }
 
 #big button.owl-next {
     position: relative;
-    left: 35px;
+    left: -35px;
 }
