@@ -27,6 +27,7 @@ jQuery(document).ready(function() {
     })
       .owlCarousel({
       items: 6,
+      dots:false,
       smartSpeed: 200,
       slideSpeed: 500,
       slideBy: 4,
