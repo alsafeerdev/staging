@@ -41,3 +41,10 @@ div.white-h-bg .owl-nav [class*='owl-']:hover {
     background: #ffffff;
     border-radius: 5px;
 }
+
+.synced-slider-big-img-cust-nav {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding: 10px!important;
+}
