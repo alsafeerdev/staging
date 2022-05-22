@@ -29,7 +29,8 @@ jQuery(document).ready(function() {
         .addClass("current");
     })
       .owlCarousel({
-      items: 8,
+      items: 6,
+      center:true,
       dots: true,
       nav: true,
       navText: [
