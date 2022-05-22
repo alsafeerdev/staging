@@ -4,7 +4,7 @@ if ($images) : ?>
 
     <div class="synced-slider-wrapper">
         <!-- Big Image Carousel Start -->
-        <div id="big" class="synced-slider-main-img owl-carousel owl-theme big-image-carousel">
+        <div id="big" class="synced-slider-main-img owl-carousel owl-theme big-image-carousel white-h-bg">
             <?php foreach ($images as $image) : ?>
                 <div class="big-image-carousel-item">
 

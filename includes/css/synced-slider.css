@@ -38,3 +38,8 @@ button.owl-prev {
     position: relative;
     left: -35px;
 }
+
+div.white-h-bg .owl-nav [class*='owl-']:hover {
+    background: #ffffff;
+    border-radius: 5px;
+}
