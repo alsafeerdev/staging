@@ -29,10 +29,7 @@ jQuery(document).ready(function() {
       items: 6,
       dots: true,
       nav: true,
-      navText: [
-        '<i class="fa fa-arrow-left" aria-hidden="true"></i>',
-        '<i class="fa fa-arrow-right" aria-hidden="true"></i>'
-      ],
+      navText: [jQuery('.prev-btn-thumb-img'), jQuery('.next-btn-thumb-img')],
       smartSpeed: 200,
       slideSpeed: 500,
       slideBy: 4,
