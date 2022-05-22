@@ -20,7 +20,10 @@ if ($images) : ?>
             <?php foreach ($images as $image) : ?>
                 <div class="thumbnail-carousel-item">
 
-                    <img class="synced-thumb-img" src="<?php echo esc_url($image['sizes']['thumbnail']); ?>" alt="Thumbnail of <?php echo esc_url($image['alt']); ?>" />
+
+                    <?php echo wp_get_attachment_image(get_the_ID(), array(), "", array("class" => "synced-thumb-img"));  ?>
+
+                  
 
                 </div>
             <?php endforeach; ?>
