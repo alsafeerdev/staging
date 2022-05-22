@@ -8,7 +8,7 @@ if ($images) : ?>
             <?php foreach ($images as $image) : ?>
                 <div class="big-image-carousel-item">
 
-                    <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                    <img class="synced-big-img" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 
                 </div>
             <?php endforeach; ?>
@@ -20,7 +20,7 @@ if ($images) : ?>
             <?php foreach ($images as $image) : ?>
                 <div class="thumbnail-carousel-item">
 
-                    <img src="<?php echo esc_url($image['sizes']['thumbnail']); ?>" alt="Thumbnail of <?php echo esc_url($image['alt']); ?>" />
+                    <img class="synced-thumb-img" src="<?php echo esc_url($image['sizes']['thumbnail']); ?>" alt="Thumbnail of <?php echo esc_url($image['alt']); ?>" />
 
                 </div>
             <?php endforeach; ?>
