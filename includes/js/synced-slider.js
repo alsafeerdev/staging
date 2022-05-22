@@ -1,6 +1,6 @@
-$(document).ready(function() {
-    var bigimage = $("#big");
-    var thumbs = $("#thumbs");
+jQuery(document).ready(function() {
+    var bigimage = jQuery("#big");
+    var thumbs = jQuery("#thumbs");
     //var totalslides = 10;
     var syncedSecondary = true;
   
@@ -89,7 +89,7 @@ $(document).ready(function() {
   
     thumbs.on("click", ".owl-item", function(e) {
       e.preventDefault();
-      var number = $(this).index();
+      var number = jQuery(this).index();
       bigimage.data("owl.carousel").to(number, 300, true);
     });
   });
