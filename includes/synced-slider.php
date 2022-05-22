@@ -5,7 +5,7 @@ if ($images) : ?>
 
     <?php foreach ($images as $image_id) : ?>
 
-        <img src="<?php echo $images ?>" alt="" srcset="">
+        <img src="<?php get_field('gallery_items'); ?>" alt="" srcset="">
 
 
     <?php endforeach; ?>
