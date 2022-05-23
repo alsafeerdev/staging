@@ -181,3 +181,13 @@ svg.dark-nav-icon {
     position: relative;
     left: 35px;
 }
+
+#services-carousel-dark button.owl-prev {
+    position: relative;
+    right: 35px;
+}
+
+#services-carousel-dark button.owl-next {
+    position: relative;
+    left: 35px;
+}
