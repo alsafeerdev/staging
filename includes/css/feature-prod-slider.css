@@ -110,3 +110,13 @@ div.feat-prods-carousel .owl-nav {
     position: relative;
     left: 35px;
 }
+
+#feat-prods-carousel button.owl-prev {
+    position: relative;
+    right: 65px;
+}
+
+#feat-prods-carousel button.owl-next {
+    position: relative;
+    left: 65px;
+}
