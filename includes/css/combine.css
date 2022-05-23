@@ -678,3 +678,7 @@ a.elementor-post__read-more:hover {
     background: #f24032;
     box-shadow: 0 0 16px -6px #000;
 }
+
+div.feat-prods-carousel .owl-stage-outer {
+    padding-bottom: 0px;
+}
