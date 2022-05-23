@@ -683,10 +683,14 @@ div.feat-prods-carousel .owl-stage-outer {
     padding-bottom: 0px;
 }
 
+/* About us conter suffix */
+
 span.elementor-counter-number-suffix {
     font-size: 50px;
     align-self: end;
 }
+
+/* Language Switcher */
 
 ul.sub-menu .elementor-nav-menu--dropdown .sm-nowrap {
     border-radius: 10px;
