@@ -42,8 +42,6 @@ add_action('wp_enqueue_scripts', 'add_carousel_js');
 function add_custom_css()
 {
     wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css', true, true);
-    wp_enqueue_style('product-grid-css', get_stylesheet_directory_uri() . '/includes/css/min/product-grid-styles.min.css', true, true);
-    wp_enqueue_style('featured-prod-slider', get_stylesheet_directory_uri() . '/includes/css/min/feature-prod-slider.min.css', true, true,);
     wp_enqueue_style('combines-styles', get_stylesheet_directory_uri() . '/includes/css/min/combine.min.css', true, true,);
 }
 add_action('wp_enqueue_scripts', 'add_custom_css');
@@ -51,6 +49,7 @@ add_action('wp_enqueue_scripts', 'add_custom_css');
 
 function product_grid()
 {
+    wp_enqueue_style('product-grid-css', get_stylesheet_directory_uri() . '/includes/css/min/product-grid-styles.min.css', true, true);
     wp_enqueue_script('bootstrap-JS', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js', array(), true, true);
     wp_enqueue_script('cat-filter-js', get_stylesheet_directory_uri() . '/includes/js/min/cat-filter-scripts.min.js', array(), true, true);
     ob_start();
@@ -114,16 +113,10 @@ function my_custom_fonts()
 
 // Custom Slider for Portfolio 
 
-function add_custom_css_splide()
-{
-    wp_enqueue_style('owl-default-css', get_stylesheet_directory_uri() . '/includes/css/min/owl.carousel.min.css', true, true);
-    wp_enqueue_style('splide-theme-css', get_stylesheet_directory_uri() . '/includes/css/min/splide-theme.min.css', true, true);
-}
-add_action('wp_enqueue_scripts', 'add_custom_css_splide');
-
-
 function portfolio_slider()
 {
+    wp_enqueue_style('splide-theme-css', get_stylesheet_directory_uri() . '/includes/css/min/splide-theme.min.css', true, true);
+
     ob_start();
     get_template_part('includes/portfolio', 'slider');
     return ob_get_clean();
@@ -136,15 +129,9 @@ add_shortcode('portfolio-slider', 'portfolio_slider');
 
 // Custom Slider for Promotions
 
-function add_custom_css_promotions_slider()
-{
-    wp_enqueue_style('promotions-slider-css', get_stylesheet_directory_uri() . '/includes/css/min/promotion-slider.min.css', true, true);
-}
-add_action('wp_enqueue_scripts', 'add_custom_css_promotions_slider');
-
-
 function promotions_slider()
 {
+    wp_enqueue_style('promotions-slider-css', get_stylesheet_directory_uri() . '/includes/css/min/promotion-slider.min.css', true, true);
     ob_start();
     get_template_part('includes/promotions', 'slider');
     return ob_get_clean();
@@ -169,15 +156,11 @@ add_shortcode('promotions-sliderLightBG', 'promotions_slider_light_bg');
 
 // Custom Slider for Services
 
-function add_custom_css_services_slider()
-{
-    wp_enqueue_style('services-slider-css', get_stylesheet_directory_uri() . '/includes/css/min/services-slider.min.css', true, true);
-}
-add_action('wp_enqueue_scripts', 'add_custom_css_services_slider');
-
-
 function services_slider()
 {
+
+    wp_enqueue_style('services-slider-css', get_stylesheet_directory_uri() . '/includes/css/min/services-slider.min.css', true, true);
+
     ob_start();
     get_template_part('includes/services', 'slider');
     return ob_get_clean();
@@ -203,19 +186,10 @@ add_shortcode('services-sliderDarkBG', 'services_slider_dark_bg');
 
 // Ajax Portfolio Grid
 
-// CSS
-function add_custom_css_ajax_portfolio_grid()
-{
-    wp_enqueue_style('portfolio-grid-css', get_stylesheet_directory_uri() . '/includes/css/min/ajax-portfolio-grid.min.css', true, true);
-}
-add_action('wp_enqueue_scripts', 'add_custom_css_ajax_portfolio_grid');
-
-// JS
-
-
-// Shortcode
 function ajax_portfolio_grid()
 {
+    wp_enqueue_style('portfolio-grid-css', get_stylesheet_directory_uri() . '/includes/css/min/ajax-portfolio-grid.min.css', true, true);
+
     ob_start();
     get_template_part('includes/ajax', 'portfolioGrid');
     return ob_get_clean();
@@ -227,6 +201,7 @@ add_shortcode('ajax-portfolio-grid', 'ajax_portfolio_grid');
 
 function featured_product_slider()
 {
+    wp_enqueue_style('featured-prod-slider', get_stylesheet_directory_uri() . '/includes/css/min/feature-prod-slider.min.css', true, true,);
     ob_start();
     get_template_part('includes/featuredProd', 'slider');
     return ob_get_clean();
@@ -248,19 +223,10 @@ add_shortcode('products-slider', 'products_slider');
 
 // Clients Carousel
 
-// Add Styles
-
-function clients_carousel_css()
-{
-    wp_enqueue_style('clients-carousel', get_stylesheet_directory_uri() . '/includes/css/min/clients-carousel.min.css', true, true);
-}
-
-add_action('wp_enqueue_scripts', 'clients_carousel_css');
-
-// Register Short code
-
 function clients_carousel()
 {
+    wp_enqueue_style('clients-carousel', get_stylesheet_directory_uri() . '/includes/css/min/clients-carousel.min.css', true, true);
+
     ob_start();
     get_template_part( 'includes/clients', 'carousel' );
     return ob_get_clean();
@@ -270,16 +236,9 @@ add_shortcode( 'clients-carousel', 'clients_carousel' );
 
 // Synced Slider Gallery 
 
-function synced_slider_css()
-{
-    wp_enqueue_style('synced-slider-styles', get_stylesheet_directory_uri() . '/includes/css/min/synced-slider.min.css', true , true );
-}
-add_action('wp_enqueue_scripts', 'synced_slider_css');
-
-// Register Shortcode and JS
-
 function synced_slider_gallery()
 {
+    wp_enqueue_style('synced-slider-styles', get_stylesheet_directory_uri() . '/includes/css/min/synced-slider.min.css', true , true );
     wp_enqueue_script('synced-slider-scripts', get_stylesheet_directory_uri() . '/includes/js/min/synced-slider.min.js', array('owl-default'), true, true);
     ob_start();
     get_template_part( 'includes/synced', 'slider' );
