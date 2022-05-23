@@ -175,3 +175,13 @@ div.promotions-carousel > .owl-stage-outer {
     position: relative;
     left: 35px;
 }
+
+#promotions-carousel-light button.owl-prev {
+    position: relative;
+    right: 35px;
+}
+
+#promotions-carousel-light button.owl-next {
+    position: relative;
+    left: 35px;
+}
