@@ -682,3 +682,8 @@ a.elementor-post__read-more:hover {
 div.feat-prods-carousel .owl-stage-outer {
     padding-bottom: 0px;
 }
+
+span.elementor-counter-number-suffix {
+    font-size: 50px;
+    align-self: end;
+}
