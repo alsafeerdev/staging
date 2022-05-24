@@ -4,7 +4,7 @@ jQuery(document).ready(function () {
   jQuery("#portfolio-carousel").owlCarousel({
     lazyLoad: true,
     loop: true,
-    margin: 15,
+    margin: 17,
     items: 1,
     center: true,
     dots: true,
