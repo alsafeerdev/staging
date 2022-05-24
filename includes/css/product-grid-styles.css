@@ -116,7 +116,7 @@ span.page-numbers.current {
     color: #fff;
 }
 
-a.page-numbers {
+a.page-numbers , span.page-numbers {
     width: 41px;
     height: 40px;
     border-radius: 20px;
@@ -156,6 +156,15 @@ a.prev {
     padding: 11px 18px;
 }
 
+span.next,
+span.prev {
+    width: auto;
+    border-radius: 30px;
+    background: #fd746c;
+    border: none;
+    color: #fff;
+    padding: 11px 18px;
+}
 a.prev:hover {
     color: #3c3c3c;
     background: none;
