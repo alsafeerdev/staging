@@ -121,7 +121,6 @@ a.page-numbers , span.page-numbers {
     height: 40px;
     border-radius: 20px;
     background: transparent;
-    border: 1px solid #3c3c3c;
     display: flex;
     flex-wrap: nowrap;
     align-content: center;
@@ -161,7 +160,7 @@ span.prev {
     width: auto;
     border-radius: 30px;
     background: #ffffff;
-    border: none;
+    border: 1px solid #3c3c3c;
     color: #fff;
     padding: 11px 18px;
 }
