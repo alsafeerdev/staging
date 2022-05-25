@@ -13,7 +13,7 @@
                             <?php foreach ($terms as $term) : ?>
                                 <label for="<?php echo $term->term_id ?>">
                                     <input type="radio" name="prod-category" id="<?php echo $term->term_id ?>" value="<?php echo $term->term_id ?>">
-                                    <?php echo $term->name ?>
+                                    <?php echo $term->name ?> (<?php echo $term->count ?>)
                                 </label>
 
                             <?php endforeach; ?>
