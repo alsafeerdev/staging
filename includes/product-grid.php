@@ -25,7 +25,7 @@
             </div>
         </div>
         <!-- Posts Goes HERE -->
-        <div class="col-md-08 posts-container">
+        <div class="col-md-8 posts-container">
             <div id="response"></div>
         </div>
     </div>
