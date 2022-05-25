@@ -9,7 +9,7 @@
         <div class="category-list">
             <?php foreach ($terms as $term) : ?>
 
-                <input type="checkbox" name="prod-category" id="<?php echo $term->term_id ?>">
+                <input type="checkbox" name="prod-category" id="<?php echo $term->term_id ?>" value="<?php echo $term->term_id ?>">
                 <label for="<?php echo $term->term_id ?>">
                     <?php echo $term->name ?>
                 </label>
