@@ -1,4 +1,4 @@
-<form action="<?php echo site_url() ?>/wp-admin/admin-ajax.php" method="POST" id="filter">
+<form action="<?php echo admin_url('admin-ajax.php') ?>" method="POST" id="filter">
     <?php
     if ($terms = get_terms(array(
         'taxonomy' => 'product_categories',
