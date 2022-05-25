@@ -1,9 +1,8 @@
 <?php
 if ($terms = get_terms(array(
-    'taxonomy' => 'product_categories', // to make it simple I use default categories
+    'taxonomy' => 'product_categories',
     'orderby' => 'name'
 ))) : ?>
-    // if categories exist, display the dropdown
 
     <ul class="category-list">
         <?php foreach ($terms as $term) : ?>
