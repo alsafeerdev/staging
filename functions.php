@@ -321,7 +321,7 @@ function ajax_filter_function()
                 </div>
             </div>
 <?php endwhile;
-echo '</div>'
+echo '</div>';
         wp_reset_postdata();
     else :
         echo 'No posts found';
