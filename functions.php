@@ -268,6 +268,7 @@ function synced_slider_gallery()
 add_shortcode('synced-slider', 'synced_slider_gallery');
 
 
+
 // Ajax Post Filter
 
 add_action('wp_ajax_myfilter', 'ajax_filter_function'); // wp_ajax_{ACTION HERE} 
@@ -282,7 +283,7 @@ function ajax_filter_function()
     );
 
     // for taxonomies / categories
-    if (isset($_POST['prod-category'])  )
+    if (isset($_POST['prod-category']))
         $args['tax_query'] = array(
             array(
                 'taxonomy' => 'product_categories',

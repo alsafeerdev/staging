@@ -1,4 +1,3 @@
-
 <form action="<?php echo admin_url('admin-ajax.php') ?>" method="POST" id="filter">
     <?php
     if ($terms = get_terms(array(
@@ -21,4 +20,3 @@
 <div id="response"></div>
 
 <!-- Query -->
-
