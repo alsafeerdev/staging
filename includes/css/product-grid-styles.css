@@ -200,3 +200,8 @@ button.accordion-button.collapsed {
     background: none !important;
     box-shadow: none !important;
 }
+
+
+ul.category-list {
+    text-align: revert;
+}
