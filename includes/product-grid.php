@@ -6,11 +6,16 @@
         'orderby' => 'name'
     ))) : ?>
 
-        <ul class="category-list">
+        <div class="category-list">
             <?php foreach ($terms as $term) : ?>
-                <li class="prod-cats" value="<?php echo $term->term_id ?>"><?php echo $term->name ?></li>
+
+                <input type="checkbox" name="prod-category" id="<?php echo $term->term_id ?>">
+                <label for="<?php echo $term->term_id ?>">
+                    <?php echo $term->name ?>
+                </label>
+
             <?php endforeach; ?>
-        </ul>
+        </div>
 
     <?php endif; ?>
 
