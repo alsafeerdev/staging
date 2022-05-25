@@ -347,9 +347,6 @@ function misha_my_load_more_scripts() {
  
 	global $wp_query; 
  
-	// In most cases it is already included on the page and this line can be removed
-	wp_enqueue_script('jquery');
- 
 	// register our main script but do not enqueue it yet
 	wp_register_script( 'my_loadmore', get_stylesheet_directory_uri() . '/includes/js/min/load-more.min.js', array('jquery') );
  
