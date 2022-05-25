@@ -1,8 +1,8 @@
 <div class="container-fluid main-container">
     <div class="row">
         <!-- Filter Goes Here -->
-        <div class="col-md-4 filter-container">
-            <div class="checkbox-container">
+        <div class="col-md-3 filter-container">
+            <div class="filter-wrapper">
                 <div class="accordion" id="filter-options">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
@@ -25,6 +25,7 @@
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
                             <div class="accordion-body">
                                 <div class="accordion" id="filter-cat">
+
                                     <div class="filter-wrapper">
                                         <form action="<?php echo admin_url('admin-ajax.php') ?>" method="POST" id="filter">
                                             <?php
@@ -46,6 +47,7 @@
                                             <input type="hidden" name="action" value="myfilter">
                                         </form>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -53,14 +55,13 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Posts Goes HERE -->
-    <div class="col-md-7 posts-container">
+        <!-- Posts Goes HERE -->
+        <div class="col-md-9 posts-container">
 
-        <div id="response">
+            <div id="response">
 
 
+            </div>
         </div>
     </div>
-</div>
 </div>
