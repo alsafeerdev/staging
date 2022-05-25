@@ -298,7 +298,7 @@ function ajax_filter_function()
 
     if ($query->have_posts()) :
         while ($query->have_posts()) : $query->the_post(); ?>
-            <div class="col-4 my-3">
+            <div class="col-md-3 my-3">
                 <div class="post-container">
                     <div class="image-container">
                         <?php
