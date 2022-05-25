@@ -296,9 +296,10 @@ function ajax_filter_function()
 
     $query = new WP_Query($args);
 
+    echo '<div class="row grid-container">';
     if ($query->have_posts()) :
         while ($query->have_posts()) : $query->the_post(); ?>
-            <div class="col-md-3 my-3">
+            <div class="col-md-4 my-3">
                 <div class="post-container">
                     <div class="image-container">
                         <?php
@@ -320,6 +321,7 @@ function ajax_filter_function()
                 </div>
             </div>
 <?php endwhile;
+echo '</div>'
         wp_reset_postdata();
     else :
         echo 'No posts found';
