@@ -299,8 +299,9 @@ function ajax_filter_function()
     echo '<div class="row grid-container">';
     if ($query->have_posts()) :
         while ($query->have_posts()) : $query->the_post(); ?>
-            <a href="<?php echo get_permalink(); ?>" class="prods-wrapper-link" target="_blank">
-                <div class="col-md-4 my-3">
+
+            <div class="col-md-4 my-3">
+                <a href="<?php echo get_permalink(); ?>" class="prods-wrapper-link" target="_blank">
                     <div class="post-container">
                         <div class="image-container">
                             <?php
@@ -320,8 +321,9 @@ function ajax_filter_function()
                             <p class="know-more ">Know More</p>
                         </div>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
+
 <?php endwhile;
         echo '</div>';
         wp_reset_postdata();
