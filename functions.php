@@ -268,12 +268,16 @@ function synced_slider_gallery()
 add_shortcode('synced-slider', 'synced_slider_gallery');
 
 
-add_action('wp_ajax_myfilter', 'misha_filter_function'); // wp_ajax_{ACTION HERE} 
-add_action('wp_ajax_nopriv_myfilter', 'misha_filter_function');
 
-function misha_filter_function()
+// Ajax Post Filter
+
+add_action('wp_ajax_myfilter', 'ajax_filter_function'); // wp_ajax_{ACTION HERE} 
+add_action('wp_ajax_nopriv_myfilter', 'ajax_filter_function');
+
+function ajax_filter_function()
 {
     $args = array(
+        'post_type' => 'featured_products',
         'orderby' => 'date', // we will sort posts by date
         'order'    => $_POST['date'] // ASC or DESC
     );
@@ -283,7 +287,7 @@ function misha_filter_function()
         $args['tax_query'] = array(
             array(
                 'taxonomy' => 'product_categories',
-                'key' => 'id',
+                'field' => 'id',
                 'terms' => $_POST['categoryfilter']
             )
         );
