@@ -283,7 +283,7 @@ function ajax_filter_function()
     );
 
     // for taxonomies / categories
-    if( isset( $_POST['prod-category'] ) && $_POST['prod-category'] )
+    if (isset($_POST['prod-category'])  )
         $args['tax_query'] = array(
             array(
                 'taxonomy' => 'product_categories',
