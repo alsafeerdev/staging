@@ -277,7 +277,7 @@ add_action('wp_ajax_nopriv_myfilter', 'ajax_filter_function');
 function ajax_filter_function()
 {
     $args = array(
-        'post_type' => 'featured_products',
+        'post_type' => 'services',
         'orderby' => 'date', // we will sort posts by date
         'order'    => $_POST['date'] // ASC or DESC
     );
