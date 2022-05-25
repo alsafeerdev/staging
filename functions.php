@@ -317,7 +317,7 @@ function ajax_filter_function()
 
                             <p class="post-excerpt"> <?php echo get_the_excerpt(); ?></p>
 
-                            <a href="<?php echo get_permalink(); ?>" target="_blank" rel="noopener noreferrer" class="know-more ">Know More</a>
+                            <p class="know-more ">Know More</p>
                         </div>
                     </div>
                 </div>
