@@ -32,6 +32,10 @@ h2.product-title {
     left: 0;
 }
 
+a.prods-wrapper-link {
+    display: contents;
+}
+
 img.product-grid-image {
     border-radius: 10px 10px 0px 0px;
     height: inherit;
