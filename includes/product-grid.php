@@ -37,7 +37,7 @@ function misha_filter_function()
         $args['tax_query'] = array(
             array(
                 'taxonomy' => 'product_categories',
-                'field' => 'id',
+                'key' => 'id',
                 'terms' => $_POST['categoryfilter']
             )
         );
