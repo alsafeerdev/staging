@@ -202,6 +202,12 @@ button.accordion-button.collapsed {
 }
 
 
-ul.category-list {
-    text-align: revert;
+/* Cat Filter */
+
+.category-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
 }
+

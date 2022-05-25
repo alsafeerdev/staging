@@ -1,11 +1,9 @@
 <form action="<?php echo site_url() ?>/wp-admin/admin-ajax.php" method="POST" id="filter">
-
     <?php
     if ($terms = get_terms(array(
         'taxonomy' => 'product_categories',
         'orderby' => 'name'
     ))) : ?>
-
         <div class="category-list">
             <?php foreach ($terms as $term) : ?>
                 <label for="<?php echo $term->term_id ?>">
@@ -15,9 +13,8 @@
 
             <?php endforeach; ?>
         </div>
-
     <?php endif; ?>
-
-
 </form>
 <div id="response"></div>
+
+
