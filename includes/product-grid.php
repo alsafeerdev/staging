@@ -1,7 +1,7 @@
 <div class="container-fluid main-container">
     <div class="row">
         <!-- Filter Goes Here -->
-        <div class="col-md-3 filter-container">
+        <div class="col-md-2 filter-container">
             <div class="filter-wrapper">
                 <div class="accordion" id="filter-options">
                     <div class="accordion-item">
@@ -56,6 +56,7 @@
             </div>
         </div>
         <!-- Posts Goes HERE -->
+        <div class="col-1"></div>
         <div class="col-md-9 posts-container">
 
             <div id="response">
