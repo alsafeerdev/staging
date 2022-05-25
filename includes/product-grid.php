@@ -31,7 +31,6 @@
 
             
             </div>
-        <div class="misha_loadmore">More posts</div>
         </div>
     </div>
 </div>
