@@ -8,7 +8,7 @@ h2.product-title {
     border-radius: 10px;
     background: #fff;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.16);
-    width: max-content;
+    width: fit-content;
     max-height: 520px;
     min-height: 520px;
 
@@ -16,7 +16,7 @@ h2.product-title {
 
 .image-container {
     height: 286px;
-    width: max-content;
+    width: fit-content;
 }
 
 img.product-grid-image {
