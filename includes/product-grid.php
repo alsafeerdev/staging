@@ -14,7 +14,7 @@
             <?php endforeach; ?>
         </div>
     <?php endif; ?>
+    <button class="submit-btn" type="submit">Apply Filter</button>
+    <input type="hidden" name="action" value="myfilter">
 </form>
 <div id="response"></div>
-
-
