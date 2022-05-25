@@ -9,14 +9,8 @@ h2.product-title {
     background: #fff;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.16);
     width: fit-content;
-    max-height: 520px;
     min-height: 520px;
 
-}
-
-.image-container {
-    height: 286px;
-    width: fit-content;
 }
 
 img.product-grid-image {
@@ -117,7 +111,8 @@ span.page-numbers.current {
     color: #fff;
 }
 
-a.page-numbers , span.page-numbers {
+a.page-numbers,
+span.page-numbers {
     width: 41px;
     height: 40px;
     border-radius: 20px;
@@ -163,9 +158,11 @@ span.prev {
     border-radius: 30px;
     background: #ffffff;
     border: 1px solid #3c3c3c;
-    color: #3c3c3c;;
+    color: #3c3c3c;
+    ;
     padding: 11px 18px;
 }
+
 a.prev:hover {
     color: #3c3c3c;
     background: none;
@@ -210,4 +207,3 @@ button.accordion-button.collapsed {
     align-items: flex-start;
     align-content: flex-start;
 }
-
