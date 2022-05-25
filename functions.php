@@ -308,7 +308,7 @@ function ajax_filter_function()
                         $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
                         ?>
                         <img src="<?php echo the_post_thumbnail_url('full'); ?>" alt="<?php echo $image_alt ?>" srcset="" class="product-grid-image">
-
+                        <div class="image-overlay"></div>
                     </div>
                     <div class="post-meta text-center d-flex flex-column flex-wrap align-items-center justify-content-between">
 
@@ -321,7 +321,7 @@ function ajax_filter_function()
                 </div>
             </div>
 <?php endwhile;
-echo '</div>';
+        echo '</div>';
         wp_reset_postdata();
     else :
         echo 'No posts found';
