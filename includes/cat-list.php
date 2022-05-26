@@ -6,7 +6,7 @@ if ($terms = get_terms(array(
     $category_id = get_cat_ID('product_categories'); ?>
     <div class="category-list">
         <ul class="cat-list">
-        <?php $term_link = get_term_link($term->term_id);?>
+        <?php $term_link = get_term_link($terms->term_id);?>
             <?php foreach ($terms as $term) : ?>
                
                 <li class="prod-cat" id="<?php echo $term->term_id ?>">
