@@ -10,7 +10,7 @@ if ($terms = get_terms(array(
 
             <?php foreach ($terms as $term) : ?>
                 <li class="prod-cat" id="<?php echo $term->term_id ?>">
-                    <a href="<?php echo get_term_link($term->slug); ?> " class="cat-link"><?php echo $term->name ?> (<?php echo $term->count ?>)</a>
+                    <a href="<?php echo $term->slug ?> " class="cat-link"><?php echo $term->name ?> (<?php echo $term->count ?>)</a>
                 </li>
             <?php endforeach; ?>
         </ul>
