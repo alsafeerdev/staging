@@ -7,13 +7,13 @@ if ($terms = get_terms(array(
     <div class="category-list">
         <ul class="cat-list">
             <?php $term_link = get_term_link($terms->term_id); ?>
-            <?php foreach ($terms as $term) : ?>ß
+            <?php foreach ($terms as $term) : ?>
             <li class="prod-cat" id="<?php echo $term->term_id ?>">
-                <a href="<?php get_term_link($term->term_id); ?> " class="cat-link"><?php echo $term->name ?> (<?php echo $term->count ?>)</a>
+                <a href="<?php get_term_link($category_id); ?> " class="cat-link"><?php echo $term->name ?> (<?php echo $term->count ?>)</a>
             </li>
         <?php endforeach; ?>
         </ul>
     </div>
 <?php endif; ?>
 
-<p>rev 1.8</p>
+<p>rev 1.9</p>
