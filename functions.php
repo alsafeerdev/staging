@@ -268,74 +268,13 @@ function synced_slider_gallery()
 add_shortcode('synced-slider', 'synced_slider_gallery');
 
 
+// Cat List
 
-// Ajax Post Filter
-
-add_action('wp_ajax_myfilter', 'ajax_filter_function'); // wp_ajax_{ACTION HERE} 
-add_action('wp_ajax_nopriv_myfilter', 'ajax_filter_function');
-
-function ajax_filter_function()
+function cat_list()
 {
-    $args = array(
-        'post_type' => 'services',
-        'orderby' => 'date', // we will sort posts by date
-        'order'    => $_POST['date'] // ASC or DESC
-    );
-
-    // for taxonomies / categories
-    if (isset($_POST['prod-category']))
-        $args['tax_query'] = array(
-            array(
-                'taxonomy' => 'product_categories',
-                'field' => 'id',
-                'terms' => $_POST['prod-category']
-            )
-        );
-
-    // if you want to use multiple checkboxed, just duplicate the above 5 lines for each checkbox
-
-    $query = new WP_Query($args);
-
-    echo '<div class="row grid-container">';
-    if ($query->have_posts()) :
-        while ($query->have_posts()) : $query->the_post(); ?>
-
-            <div class="col-md-4 my-3">
-                <a href="<?php echo get_permalink(); ?>" class="prods-wrapper-link" target="_blank">
-                    <div class="post-container">
-                        <div class="image-container">
-                            <?php
-                            // An attachment/image ID is all that's needed to retrieve its alt and title attributes.
-                            $image_id = get_post_thumbnail_id();
-                            $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
-                            ?>
-                            <img src="<?php echo the_post_thumbnail_url('full'); ?>" alt="<?php echo $image_alt ?>" srcset="" class="product-grid-image">
-                            <div class="image-overlay"></div>
-                        </div>
-                        <div class="post-meta text-center d-flex flex-column flex-wrap align-items-center justify-content-between">
-
-                            <h2 class="product-title"> <?php the_title(); ?></h2>
-
-                            <p class="post-excerpt"> <?php echo get_the_excerpt(); ?></p>
-
-                            <p class="know-more ">Know More</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-<?php endwhile;
-        echo '</div>';
-      
-
-     
-        wp_reset_postdata();
-    else :
-        echo 'No posts found';
-    endif;
-
-    die();
+    ob_start();
+    get_template_part('includes/cat', 'list');
+    return ob_get_clean();
 }
 
-// Pagination
-
+add_shortcode( 'cat-list', 'cat_list' );
