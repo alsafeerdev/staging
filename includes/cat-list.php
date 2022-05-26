@@ -1,22 +1,15 @@
 <?php
-$categories = get_categories(array(
-    'taxonomy' => 'product_categories',
+$categories = get_categories( array(
     'orderby' => 'name',
+    'taxonomy' => 'product_categories',
     'order'   => 'ASC'
-)); ?>
+) );
 
-<?php foreach ($categories as $category) : ?>
+foreach( $categories as $category ) {
+ echo '<div class="category-list"><a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></div>';   
+} 
+?>
 
-    <div class="category-list">
-        <ul class="cat-list">
-
-            <li class="prod-cat" id="<?php echo $category->term_id ?>">
-                <a href="<?php get_category_link($category->term_id); ?> " class="cat-link"><?php echo $category->name ?> (<?php echo $category->count ?>)</a>
-            </li>
-
-        <?php endforeach; ?>
-        </ul>
-    </div>
+    <p>rev 2.2</p>
 
 
-    <p>rev 2</p>
