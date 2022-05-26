@@ -3,7 +3,6 @@ if ($terms = get_terms(array(
     'taxonomy' => 'product_categories',
     'orderby' => 'name'
 ))) :
-    $term_link = get_term_link($terms);
     $category_id = get_cat_ID('product_categories'); ?>
     <div class="category-list">
         <ul class="cat-list">
