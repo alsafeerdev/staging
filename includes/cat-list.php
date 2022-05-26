@@ -1,18 +1,22 @@
 <?php
-if ($terms = get_terms(array(
+$categories = get_categories(array(
     'taxonomy' => 'product_categories',
-    'orderby' => 'name'
-))) :
-    $category_id = get_cat_ID('product_categories'); ?>
+    'orderby' => 'name',
+    'order'   => 'ASC'
+)); ?>
+
+<?php foreach ($categories as $category) : ?>
+
     <div class="category-list">
         <ul class="cat-list">
-            <?php foreach ($terms as $term) : ?>
-            <li class="prod-cat" id="<?php echo $term->term_id ?>">
-                <a href="<?php get_term_link($category_id); ?> " class="cat-link"><?php echo $term->name ?> (<?php echo $term->count ?>)</a>
+
+            <li class="prod-cat" id="<?php echo $category->term_id ?>">
+                <a href="<?php get_category_link($category->term_id); ?> " class="cat-link"><?php echo $category->name ?> (<?php echo $category->count ?>)</a>
             </li>
+
         <?php endforeach; ?>
         </ul>
     </div>
-<?php endif; ?>
 
-<p>rev 2</p>
+
+    <p>rev 2</p>
