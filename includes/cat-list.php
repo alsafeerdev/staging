@@ -17,4 +17,3 @@ if ($terms = get_terms(array(
     </div>
 <?php endif; ?>
 
-<p>rev 1</p>
