@@ -118,3 +118,7 @@ nav.elementor-pagination {
     margin-top: 45px;
     justify-content: center;
 }
+
+ul.cat-list {
+    margin-left: 0;
+}
