@@ -3,11 +3,11 @@ if ($terms = get_terms(array(
     'taxonomy' => 'product_categories',
     'orderby' => 'name'
 ))) :
-
+    $term_link = get_term_link($terms);
     $category_id = get_cat_ID('product_categories'); ?>
     <div class="category-list">
         <ul class="cat-list">
-            <?php $term_link = get_term_link($terms); ?>
+
             <?php foreach ($terms as $term) : ?>
                 <li class="prod-cat" id="<?php echo $term->term_id ?>">
                     <a href="<?php echo $term_link ?> " class="cat-link"><?php echo $term->name ?> (<?php echo $term->count ?>)</a>
@@ -17,4 +17,4 @@ if ($terms = get_terms(array(
     </div>
 <?php endif; ?>
 
-<p>rev1.1</p>
+<p>rev 1.2</p>
