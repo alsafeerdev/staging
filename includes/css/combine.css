@@ -108,13 +108,6 @@ ul.sub-menu .elementor-nav-menu--dropdown .sm-nowrap {
     border-radius: 10px;
 }
 
-div#lang-switcher,
-ul {
-    border-radius: 10px;
-    text-align: center;
-    justify-content: center;
-}
-
 .lang-item,
 a.elementor-sub-item.menu-link {
     border-radius: 10px;
