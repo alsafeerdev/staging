@@ -7,10 +7,10 @@ if ($terms = get_terms(array(
     $category_id = get_cat_ID('product_categories'); ?>
     <div class="category-list">
         <ul class="cat-list">
-
+            <?php $term_link = get_term_link($term); ?>
             <?php foreach ($terms as $term) : ?>
                 <li class="prod-cat" id="<?php echo $term->term_id ?>">
-                    <a href="<?php echo $term->slug ?> " class="cat-link"><?php echo $term->name ?> (<?php echo $term->count ?>)</a>
+                    <a href="<?php echo $term_link ?> " class="cat-link"><?php echo $term->name ?> (<?php echo $term->count ?>)</a>
                 </li>
             <?php endforeach; ?>
         </ul>
