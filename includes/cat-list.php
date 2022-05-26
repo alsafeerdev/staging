@@ -10,6 +10,3 @@ foreach( $categories as $category ) {
 } 
 ?>
 
-    <p>rev 2.2</p>
-
-
