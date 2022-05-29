@@ -192,13 +192,13 @@ a.prev {
 
 span.next,
 span.prev {
-    width: auto;
+    /* width: auto;
     border-radius: 30px;
     background: #ffffff;
     border: 1px solid #3c3c3c;
     color: #3c3c3c;
-    ;
-    padding: 11px 18px;
+    padding: 11px 18px; */
+    display: none;
 }
 
 a.prev:hover {
