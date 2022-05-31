@@ -122,3 +122,7 @@ nav.elementor-pagination {
 ul.cat-list {
     margin-left: 0;
 }
+
+.elementor-slideshow__title {
+    display: none;
+}
