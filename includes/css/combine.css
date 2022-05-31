@@ -126,3 +126,7 @@ ul.cat-list {
 .elementor-slideshow__title {
     display: none;
 }
+
+i.eicon-share-arrow {
+    display: none;
+}
