@@ -60,28 +60,6 @@ function product_grid()
 
 add_shortcode('custom-product-grid', 'product_grid');
 
-// Modify Exerpt Length
-
-function custom_excerpt_length($length)
-{
-    global $post;
-    if ($post->post_type == 'post')
-        return 25;
-    else if ($post->post_type == 'product')
-        return 10;
-    else
-        return 25;
-
-    return 20;
-}
-add_filter('excerpt_length', 'custom_excerpt_length', 999);
-
-
-function custom_excerpt_more( $more ) {
-    return '[...]';
-}
-add_filter( 'excerpt_more', 'custom_excerpt_more' );
-
 // Dashboard Edit
 add_action('admin_head', 'my_custom_fonts');
 
