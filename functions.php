@@ -83,6 +83,12 @@ function add_custom_css_splide()
 }
 add_action('wp_enqueue_scripts', 'add_custom_css_splide');
 
+// Excerpt More
+
+function new_excerpt_more( $more ) {
+    return '...';
+ }   
+ add_filter('excerpt_more', 'new_excerpt_more');
 
 function portfolio_slider()
 {
