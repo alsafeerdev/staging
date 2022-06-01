@@ -76,7 +76,13 @@ function custom_excerpt_length($length)
 }
 add_filter('excerpt_length', 'custom_excerpt_length', 999);
 
-add_filter('excerpt_more', '__return_false');
+
+function custom_excerpt_more( $excerpt ) {
+    return str_replace( '[…]', '...', $excerpt );
+}
+
+
+add_filter('excerpt_more', 'custom_excerpt_more');
 
 // Dashboard Edit
 add_action('admin_head', 'my_custom_fonts');
