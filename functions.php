@@ -86,7 +86,7 @@ add_action('wp_enqueue_scripts', 'add_custom_css_splide');
 // Excerpt More
 
 function new_excerpt_more( $more ) {
-    return '...';
+    return '[...]';
  }   
  add_filter('excerpt_more', 'new_excerpt_more');
 
