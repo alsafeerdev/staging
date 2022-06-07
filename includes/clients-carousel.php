@@ -14,7 +14,7 @@ $loop = new WP_Query($args); ?>
             <a href="/our-clients/" class="client-image-wrapper-link">
                 <div class="clients-logo-container">
                     <div class="client-logo-img-container">
-                        <img data-blink-src="<?php echo get_field('client_logo'); ?>" alt="" class="client-logo">
+                        <img src="<?php echo get_field('client_logo'); ?>" alt="" class="client-logo">
                     </div>
                 </div>
             </a>
