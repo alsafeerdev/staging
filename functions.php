@@ -85,9 +85,9 @@ add_action('wp_enqueue_scripts', 'add_custom_css_splide');
 
 // Excerpt More
 
-add_filter( 'excerpt_more', function( $more ) {
-	return '...';
-}, 30 );
+add_filter('excerpt_more', function ($more) {
+    return '...';
+}, 30);
 
 
 // Portfolio Slider
@@ -271,8 +271,13 @@ add_shortcode('cat-list', 'cat_list');
 
 function particles_js()
 {
-    wp_enqueue_script( 'particles-js', 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js', true, true);
-   
+    wp_enqueue_script('particles-js', 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js', true, true);
 }
-add_action( 'wp_enqueue_scripts', 'particles_js');
+add_action('wp_enqueue_scripts', 'particles_js');
 
+function image_optimize_js()
+{
+    wp_enqueue_script('image-optimize-js', get_stylesheet_directory_uri() . '/includes/js/image-optimize.js', false, false);
+}
+
+add_action('wp_enqueue_scripts', 'particles_js');
