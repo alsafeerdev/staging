@@ -275,9 +275,14 @@ function particles_js()
 }
 add_action('wp_enqueue_scripts', 'particles_js');
 
+/** 
+
 function image_optimize_js()
 {
     wp_enqueue_script('image-optimize-js', get_stylesheet_directory_uri() . '/includes/js/min/image-optimize.min.js', false, false);
 }
 
 add_action('wp_enqueue_scripts', 'image_optimize_js');
+
+*/
+
