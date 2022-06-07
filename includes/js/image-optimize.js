@@ -9,6 +9,7 @@
         smartCompression: true,
         responsive: true,
         retina: true,
-        webp: true
+        webp: true,
+        format:auto
     });
 })
