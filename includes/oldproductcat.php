@@ -73,7 +73,7 @@
                                         $image_id = get_post_thumbnail_id();
                                         $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
                                         ?>
-                                        <img src="<?php echo the_post_thumbnail_url('full'); ?>" alt="<?php echo $image_alt ?>" srcset="" class="product-grid-image">
+                                        <img data-blink-src="<?php echo the_post_thumbnail_url('full'); ?>" alt="<?php echo $image_alt ?>" srcset="" class="product-grid-image">
 
                                     </div>
                                     <div class="post-meta text-center d-flex flex-column flex-wrap align-items-center justify-content-between">

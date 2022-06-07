@@ -20,7 +20,7 @@ $loop = new WP_Query($args); ?>
             <div class="promotion-container">
                 <a href="<?php echo get_permalink(); ?>" class="promo-link" target="_blank">
                     <div class="promo-image-container">
-                        <img src="<?php echo the_post_thumbnail_url('full'); ?>" alt="<?php echo $image_alt ?>" srcset="" class="promo-feat-image">
+                        <img data-blink-src="<?php echo the_post_thumbnail_url('full'); ?>" alt="<?php echo $image_alt ?>" srcset="" class="promo-feat-image">
                     </div>
                     <div class="promo-content">
                         <h3 class="promo-title"> <?php the_title(); ?></h3>

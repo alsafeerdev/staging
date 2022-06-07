@@ -23,7 +23,7 @@ foreach ($terms as $term) {
            
   <div class="portfolio-catergory-grid-content-wrapper">
   <div class="portfolio-catergory-grid-img-container">
-      <img class="portfolio-catergory-grid-img" src="' . $thumbnail .'" alt="" srcset="">
+      <img class="portfolio-catergory-grid-img" data-blink-src="' . $thumbnail .'" alt="" srcset="">
   </div>
   <div class="portfolio-catergory-grid-title-container">
       <h3 class="portfolio-catergory-grid">' . $term->name . '</h3>
