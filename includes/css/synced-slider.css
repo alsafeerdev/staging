@@ -15,8 +15,12 @@ img.synced-thumb-img {
 
 .big-image-carousel-item {
     padding: 10px;
+}
+
+img.synced-big-img {
     height: 850px;
-    width: 850px;
+    width: 850px !important;
+    object-fit: cover;
 }
 
 .owl-nav {
