@@ -9,7 +9,7 @@ img.synced-thumb-img {
 
 .owl-item.active.current img {
     border-radius: 10px;
-    /* border: 5px solid #fd746c; */
+    border: 5px solid #fd746c;
     box-shadow: 0px 0px 11px 0px #0000009c;
 }
 
