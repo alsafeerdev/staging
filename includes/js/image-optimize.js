@@ -10,6 +10,6 @@
         responsive: true,
         retina: true,
         webp: true,
-        format:auto
+        format:"auto"
     });
 })
