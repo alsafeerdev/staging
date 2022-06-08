@@ -8,7 +8,7 @@ if ($images) : ?>
             <?php foreach ($images as $image) : ?>
                 <div class="big-image-carousel-item">
 
-                    <img class="synced-big-img" data-blink-src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                    <img width="850" height="850" class="synced-big-img" data-blink-src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 
                 </div>
             <?php endforeach; ?>
