@@ -275,7 +275,7 @@ function particles_js()
 }
 add_action('wp_enqueue_scripts', 'particles_js');
 
-/** 
+
 
 function image_optimize_js()
 {
@@ -283,6 +283,4 @@ function image_optimize_js()
 }
 
 add_action('wp_enqueue_scripts', 'image_optimize_js');
-
-*/
 
