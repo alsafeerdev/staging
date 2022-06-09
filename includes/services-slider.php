@@ -20,7 +20,7 @@ $loop = new WP_Query($args); ?>
             <div class="services-container text-center">
                 <a href="<?php echo get_permalink(); ?>" class="service-link" target="_blank">
                     <div class="service-image-container">
-                        <img data-blink-src="<?php echo the_post_thumbnail_url('full'); ?>" alt="<?php echo $image_alt ?>" srcset="" class="service-feat-image">
+                        <img data-blink-src="<?php echo the_post_thumbnail_url('full'); ?>" alt="<?php echo $image_alt ?>" class="service-feat-image">
                     </div>
                     <div class="service-content text-center">
                         <h3 class="service-title"> <?php the_title(); ?></h3>
