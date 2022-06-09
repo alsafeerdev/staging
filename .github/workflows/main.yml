@@ -11,7 +11,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
-        server: ftp.alsafeeradvt.com
+        server: alsafeeradvt.com
         username: admin@alsafeeradvt.com
         password: ${{ secrets.FTP_PASS }}
         port: 21
