@@ -1,0 +1,9 @@
+/* Clients carousel */
+
+@media screen and (max-width:1920px) {
+
+    .clients-carousel.owl-item{
+        margin-right: 35px;
+    }
+    
+}

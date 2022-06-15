@@ -161,5 +161,16 @@ jQuery(document).ready(function () {
     autoplaySpeed: 3000,
     slideTransition: 'linear',
     navText: [jQuery('.prev-btn-clients'), jQuery('.next-btn-clients')],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 5,
+      }
+    },
   });
 });
