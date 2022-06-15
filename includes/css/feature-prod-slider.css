@@ -14,6 +14,7 @@ img.feat-prods-feat-image {
     align-content: center;
     align-items: center;
     justify-content: flex-start;
+    min-height: 320px;
 }
 
 h3.feat-prods-title {
