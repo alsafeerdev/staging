@@ -284,3 +284,10 @@ function image_optimize_js()
 
 add_action('wp_enqueue_scripts', 'image_optimize_js');
 
+// add media queries
+
+function media_queries()
+{
+    wp_enqueue_style( 'media-queries', get_stylesheet_directory_uri() . '/includes/css/min/media.min.css', true , '(max-width: 1920px)' );
+
+}
