@@ -288,7 +288,7 @@ add_action('wp_enqueue_scripts', 'image_optimize_js');
 
 function media_queries()
 {
-    wp_enqueue_style( 'media-queries', get_stylesheet_directory_uri() . '/includes/css/min/media.min.css', 'all','1.0' );
+    wp_enqueue_style( 'media-queries', get_stylesheet_directory_uri() . '/includes/css/min/media.min.css', '(max-width:1920px)','1.0' );
 
 }
 
