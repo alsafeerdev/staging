@@ -42,8 +42,8 @@ add_action('wp_enqueue_scripts', 'add_carousel_js');
 function add_custom_css()
 {
     wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css', true, true);
-    // wp_enqueue_style('product-grid-css', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/product-grid-styles.min.css', true, true);
-    // wp_enqueue_style('featured-prod-slider', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/feature-prod-slider.min.css', true, true,);
+    wp_enqueue_style('product-grid-css', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/product-grid-styles.min.css', true, true);
+    wp_enqueue_style('featured-prod-slider', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/feature-prod-slider.min.css', true, true,);
     wp_enqueue_style('combines-styles', 'https://cdn.jsdelivr.net/gh/alsafeerdev/staging@main/includes/css/min/combine.min.css', true, true,);
 }
 add_action('wp_enqueue_scripts', 'add_custom_css');
@@ -78,8 +78,8 @@ function my_custom_fonts()
 
 function add_custom_css_splide()
 {
-    // wp_enqueue_style('owl-default-css', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/owl.carousel.min.css', true, true);
-    // wp_enqueue_style('splide-theme-css', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/splide-theme.min.css', true, true);
+    wp_enqueue_style('owl-default-css', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/owl.carousel.min.css', true, true);
+    wp_enqueue_style('splide-theme-css', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/splide-theme.min.css', true, true);
 }
 add_action('wp_enqueue_scripts', 'add_custom_css_splide');
 
@@ -107,7 +107,7 @@ add_shortcode('portfolio-slider', 'portfolio_slider');
 
 function add_custom_css_promotions_slider()
 {
-    // wp_enqueue_style('promotions-slider-css', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/promotion-slider.min.css', true, true);
+    wp_enqueue_style('promotions-slider-css', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/promotion-slider.min.css', true, true);
 }
 add_action('wp_enqueue_scripts', 'add_custom_css_promotions_slider');
 
@@ -140,7 +140,7 @@ add_shortcode('promotions-sliderLightBG', 'promotions_slider_light_bg');
 
 function add_custom_css_services_slider()
 {
-    // wp_enqueue_style('services-slider-css', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/services-slider.min.css', true, true);
+    wp_enqueue_style('services-slider-css', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/services-slider.min.css', true, true);
 }
 add_action('wp_enqueue_scripts', 'add_custom_css_services_slider');
 
@@ -175,7 +175,7 @@ add_shortcode('services-sliderDarkBG', 'services_slider_dark_bg');
 // CSS
 function add_custom_css_ajax_portfolio_grid()
 {
-    // wp_enqueue_style('portfolio-grid-css', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/ajax-portfolio-grid.min.css', true, true);
+    wp_enqueue_style('portfolio-grid-css', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/ajax-portfolio-grid.min.css', true, true);
 }
 add_action('wp_enqueue_scripts', 'add_custom_css_ajax_portfolio_grid');
 
@@ -221,7 +221,7 @@ add_shortcode('products-slider', 'products_slider');
 
 function clients_carousel_css()
 {
-    // wp_enqueue_style('clients-carousel', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/clients-carousel.min.css', true, true);
+    wp_enqueue_style('clients-carousel', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/clients-carousel.min.css', true, true);
 }
 
 add_action('wp_enqueue_scripts', 'clients_carousel_css');
@@ -241,7 +241,7 @@ add_shortcode('clients-carousel', 'clients_carousel');
 
 function synced_slider_css()
 {
-    // wp_enqueue_style('synced-slider-styles', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/synced-slider.min.css', true, true);
+    wp_enqueue_style('synced-slider-styles', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/synced-slider.min.css', true, true);
 }
 add_action('wp_enqueue_scripts', 'synced_slider_css');
 
