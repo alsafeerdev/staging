@@ -293,3 +293,11 @@ function media_queries()
 }
 
 add_action('wp_enqueue_scripts', 'media_queries' );
+
+// Disable font awesome 
+
+add_action('elementor/frontend/after_register_styles',function() {
+	foreach( [ 'solid', 'regular', 'brands' ] as $style ) {
+		wp_deregister_style( 'elementor-icons-fa-' . $style );
+	}
+}, 20 );
