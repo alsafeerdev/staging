@@ -22,8 +22,7 @@ jQuery(document).ready(function () {
 
 // Promotions Carousal
 
-jQuery(window).on('load', function () {
-
+jQuery(document).ready(function () {
   jQuery("#promotions-carousel").owlCarousel({
     lazyLoad: true,
     loop: true,
@@ -38,7 +37,7 @@ jQuery(window).on('load', function () {
     slideTransition: 'ease',
     stagePadding: 35,
     navText: [jQuery('.prev-btn'), jQuery('.next-btn')],
-    responsiveClass: true,
+    responsiveClass:true,
     responsive: {
       0: {
         items: 1,
@@ -54,8 +53,7 @@ jQuery(window).on('load', function () {
       }
     },
   });
-
-})
+});
 
 // Promotions Carousal Light BG
 
@@ -129,7 +127,7 @@ jQuery(document).ready(function () {
     autoplaySpeed: 2500,
     slideTransition: 'ease',
     navText: [jQuery('.prev-btn-feat-prod'), jQuery('.next-btn-feat-prod')],
-    responsiveClass: true,
+    responsiveClass:true,
     responsive: {
       0: {
         items: 1,
@@ -181,7 +179,7 @@ jQuery(document).ready(function () {
     autoplaySpeed: 3000,
     slideTransition: 'linear',
     navText: [jQuery('.prev-btn-clients'), jQuery('.next-btn-clients')],
-    responsiveClass: true,
+    responsiveClass:true,
     responsive: {
       0: {
         items: 1,
