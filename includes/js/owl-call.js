@@ -153,7 +153,6 @@ jQuery(document).ready(function () {
 jQuery(document).ready(function () {
   jQuery("#clients-carousel").owlCarousel({
     lazyLoad: true,
-    items: 5,
     loop: true,
     center: true,
     dots: true,
