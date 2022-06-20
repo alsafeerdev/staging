@@ -31,7 +31,7 @@ add_action('wp_enqueue_scripts', 'child_enqueue_styles', 15);
 function add_carousel_js()
 {
     wp_enqueue_script('owl-default', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/js/min/owl.carousel.min.js', array('jquery'), true, true);
-    wp_enqueue_script('owl-call', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/js/min/owl-call.min.js', array('owl-default'), true, true);
+    wp_enqueue_script('owl-call', get_stylesheet_directory_uri() . '/includes/js/min/owl-call.min.js', array('owl-default'), true, true);
 }
 
 add_action('wp_enqueue_scripts', 'add_carousel_js');
