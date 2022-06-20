@@ -112,6 +112,7 @@ jQuery(document).ready(function () {
     autoplaySpeed: 2500,
     slideTransition: 'ease',
     navText: [jQuery('.prev-btn-feat-prod'), jQuery('.next-btn-feat-prod')],
+    responsiveClass:true,
     responsive: {
       0: {
         items: 1,
@@ -163,6 +164,7 @@ jQuery(document).ready(function () {
     autoplaySpeed: 3000,
     slideTransition: 'linear',
     navText: [jQuery('.prev-btn-clients'), jQuery('.next-btn-clients')],
+    responsiveClass:true,
     responsive: {
       0: {
         items: 1,
