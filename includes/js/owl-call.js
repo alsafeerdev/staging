@@ -120,6 +120,9 @@ jQuery(document).ready(function () {
         items: 3,
       },
       1000: {
+        items: 3,
+      },
+      1800: {
         items: 4,
       }
     },
