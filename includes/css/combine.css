@@ -121,7 +121,13 @@ nav.elementor-pagination {
     justify-content: flex-start;
     align-items: center;
 }
+a.page-numbers {
+    margin-top: 10px;
+}
 
+span.page-numbers {
+    margin-top: 10px;
+}
 
 ul.cat-list {
     margin-left: 0;
