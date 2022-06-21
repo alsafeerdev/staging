@@ -31,3 +31,12 @@
         margin-bottom: 0px !important;
     }
 }
+
+@media (max-width: 375px) {
+
+    a.page-numbers, span.page-numbers{
+        font-size: 14px;
+        height: 30px;
+    }
+
+}
