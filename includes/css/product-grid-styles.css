@@ -130,8 +130,7 @@ a.know-more:hover {
 
 
 span.page-numbers.current {
-    width: 41px;
-    height: 41px;
+    padding: 0px 15px;
     border: none;
     border-radius: 20px;
     background: #fd746c;
@@ -151,8 +150,7 @@ span.page-numbers.current {
 
 a.page-numbers,
 span.page-numbers {
-    width: 41px;
-    height: 40px;
+    padding: 0px 15px;
     border-radius: 20px;
     background: transparent;
     border: 1px solid #3c3c3c;
