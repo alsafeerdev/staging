@@ -36,10 +36,10 @@
 
     a.page-numbers,
     span.page-numbers {
-        padding: 2px 10px;
+        padding: 3px 10px;
     }
 
     span.page-numbers.current{
-        padding: 2px 10px;
+        padding: 3px 10px;
     }
 }
