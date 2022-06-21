@@ -32,7 +32,7 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 767px) {
 
     a.page-numbers, span.page-numbers{
         font-size: 14px;
