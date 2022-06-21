@@ -116,8 +116,12 @@ a.elementor-sub-item.menu-link {
 nav.elementor-pagination {
     display: flex;
     margin-top: 45px;
-    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
+
 
 ul.cat-list {
     margin-left: 0;
