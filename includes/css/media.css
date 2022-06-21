@@ -34,10 +34,13 @@
 
 @media (max-width: 767px) {
 
-    a.page-numbers, span.page-numbers{
+    a.page-numbers,
+    span.page-numbers {
         font-size: 14px;
         height: 30px;
     }
 
+    article.elementor-post.elementor-grid-item.status-publish.has-post-thumbnail.hentry.ast-grid-common-col.ast-full-width {
+        height: auto;
+    }
 }
-
