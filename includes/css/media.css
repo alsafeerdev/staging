@@ -28,6 +28,6 @@
 @media (max-width: 1366px) {
 
     .elementor-2294 .elementor-element.elementor-element-bc22980 .elementor-post__text {
-        margin-bottom: 75px;
+        margin-bottom: 0px !important;
     }
 }
