@@ -24,8 +24,26 @@
         margin-bottom: 0px !important;
     }
 
-    h3.portfolio-catergory-grid{
+    h3.portfolio-catergory-grid {
         font-size: 16px;
+    }
+
+    a.page-numbers,
+    span.page-numbers {
+        padding: 3px 10px;
+    }
+
+    span.page-numbers.current {
+        padding: 3px 10px;
+    }
+
+    img.synced-big-img {
+        height: auto;
+    }
+
+    img.synced-thumb-img {
+        height: auto;
+        max-width: 85px;
     }
 }
 
@@ -33,17 +51,5 @@
 
     .elementor-2294 .elementor-element.elementor-element-bc22980 .elementor-post__text {
         margin-bottom: 0px !important;
-    }
-}
-
-@media (max-width: 767px) {
-
-    a.page-numbers,
-    span.page-numbers {
-        padding: 3px 10px;
-    }
-
-    span.page-numbers.current{
-        padding: 3px 10px;
     }
 }
