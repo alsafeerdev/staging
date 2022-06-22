@@ -104,7 +104,7 @@ jQuery(document).ready(function () {
 // Featured Products Carousal Dark BG
 
 jQuery(document).ready(function () {
-  jQuery("#feat-prods-carousel").owlCarousel({
+  jQuery(".feat-prod-carousel").owlCarousel({
     loop: true,
     margin: 5,
     autoplay: true,
