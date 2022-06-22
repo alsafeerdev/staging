@@ -21,7 +21,7 @@ img.synced-thumb-img {
 
 img.synced-big-img {
     height: 850px;
-    width: 850px !important;
+    width: 850px;
     object-fit: cover;
 }
 
