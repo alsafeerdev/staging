@@ -13,11 +13,7 @@ $loop = new WP_Query($args); ?>
             $loop->the_post(); ?>
             <div class="item">
                 <a href="/our-clients/" class="client-image-wrapper-link">
-                    <div class="clients-logo-container">
-                        <div class="client-logo-img-container">
-                            <img src="<?php echo get_field('client_logo'); ?>" alt="" class="client-logo">
-                        </div>
-                    </div>
+                    <img src="<?php echo get_field('client_logo'); ?>" alt="" class="client-logo">
                 </a>
             </div>
         <?php endwhile; ?>
