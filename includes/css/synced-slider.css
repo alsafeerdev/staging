@@ -36,13 +36,13 @@ img.synced-big-img {
 
 #big button.owl-prev {
     position: relative;
-    right: -150px;
+    right: -25px;
     transform: rotateY(180deg);
 }
 
 #big button.owl-next {
     position: relative;
-    left: -150px;
+    left: -25px;
 }
 
 div.white-h-bg .owl-nav [class*='owl-']:hover {
