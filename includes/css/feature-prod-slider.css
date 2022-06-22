@@ -121,3 +121,34 @@ div.feat-prods-carousel .owl-nav {
     position: relative;
     left: 65px;
 }
+
+
+
+/* Mobile Version*/
+
+.feat-prod-carousel .img-container img {
+    border-radius: 10px 10px 0 0;
+}
+
+.feat-prod-carousel .content {
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background: #fff;
+}
+.feat-prod-carousel h3.title {
+    font-family: 'PT Serif';
+    font-weight: 600;
+    font-size: 21px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.feat-prod-carousel p.exerpt {
+    font-family: 'PT Sans';
+    font-weight: 400;
+    font-size: 16px;
+}
