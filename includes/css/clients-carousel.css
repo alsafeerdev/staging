@@ -2,6 +2,7 @@ img.client-logo {
     object-fit: fill;
     width: 360px;
     height: 120px;
+    padding: 0px 20px;
 }
 
 svg.nav-main-clients-logo {
