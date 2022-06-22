@@ -137,11 +137,11 @@ jQuery(document).ready(function () {
 jQuery(document).ready(function () {
   jQuery(".feat-prod-carousel").owlCarousel({
     loop: true,
-    margin: 10,
+    margin: 12,
     nav: false,
     dots:false,
     items: 1,
-    autoplay:false,
+    autoplay:true,
     stagePadding:10,
     center:true
   });
