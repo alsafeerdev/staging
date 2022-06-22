@@ -37,7 +37,7 @@ jQuery(document).ready(function () {
     slideTransition: 'ease',
     stagePadding: 35,
     navText: [jQuery('.prev-btn'), jQuery('.next-btn')],
-    responsive:false,
+    responsive: false,
   });
 });
 
@@ -113,7 +113,7 @@ jQuery(document).ready(function () {
     autoplaySpeed: 2500,
     slideTransition: 'ease',
     navText: [jQuery('.prev-btn-feat-prod'), jQuery('.next-btn-feat-prod')],
-    responsiveClass:true,
+    responsiveClass: true,
     responsive: {
       0: {
         items: 1,
@@ -128,6 +128,22 @@ jQuery(document).ready(function () {
         items: 4,
       }
     },
+  });
+});
+
+// Featured Products Carousal Mobile Dev
+
+jQuery(document).ready(function () {
+  jQuery("#feat-prods-mb-carousel").owlCarousel({
+    loop: true,
+    margin: 5,
+    autoplay: true,
+    nav: false,
+    dots: false,
+    autoplaySpeed: 2500,
+    slideTransition: 'ease',
+    responsiveClass: true,
+    items: 1,
   });
 });
 
@@ -165,7 +181,7 @@ jQuery(document).ready(function () {
     autoplaySpeed: 3000,
     slideTransition: 'linear',
     navText: [jQuery('.prev-btn-clients'), jQuery('.next-btn-clients')],
-    responsiveClass:true,
+    responsiveClass: true,
     responsive: {
       0: {
         items: 1,

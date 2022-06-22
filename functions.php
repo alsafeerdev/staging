@@ -288,16 +288,28 @@ add_action('wp_enqueue_scripts', 'image_optimize_js');
 
 function media_queries()
 {
-    wp_enqueue_style( 'media-queries', get_stylesheet_directory_uri() . '/includes/css/min/media.min.css', 'all','1.3' );
-
+    wp_enqueue_style('media-queries', get_stylesheet_directory_uri() . '/includes/css/min/media.min.css', 'all', '1.3');
 }
 
-add_action('wp_enqueue_scripts', 'media_queries' );
+add_action('wp_enqueue_scripts', 'media_queries');
 
 // Disable font awesome 
 
-add_action('elementor/frontend/after_register_styles',function() {
-	foreach( [ 'solid', 'regular', 'brands' ] as $style ) {
-		wp_deregister_style( 'elementor-icons-fa-' . $style );
-	}
-}, 20 );
+add_action('elementor/frontend/after_register_styles', function () {
+    foreach (['solid', 'regular', 'brands'] as $style) {
+        wp_deregister_style('elementor-icons-fa-' . $style);
+    }
+}, 20);
+
+
+// Featured Products Carousel for mobile devices
+
+function feat_products_mb()
+{
+    ob_start();
+    get_template_part('includes/featprod', 'm');
+    return ob_get_clean();
+}
+
+add_shortcode('feat-prod-mb', 'feat_products_mb');
+
