@@ -31,15 +31,6 @@
         padding: 3px 10px;
     }
 
-    img.synced-big-img {
-        height: auto;
-    }
-
-    img.synced-thumb-img {
-        height: auto;
-        max-width: 85px;
-    }
-
 }
 
 @media (max-width: 1366px) {
