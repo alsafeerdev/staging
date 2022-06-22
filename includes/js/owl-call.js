@@ -140,7 +140,7 @@ jQuery(document).ready(function () {
     nav: false,
     dots:false,
     items: 1,
-    autoplay:true,
+    autoplay:false,
     stagePadding:10,
     center:true
   });
