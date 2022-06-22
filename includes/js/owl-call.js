@@ -5,6 +5,7 @@ jQuery(document).ready(function () {
     lazyLoad: true,
     loop: true,
     margin: 17,
+    stagePadding:10,
     items: 1,
     center: true,
     dots: true,
