@@ -3,7 +3,7 @@
         <div class="col">
 
             <div id="feat-prod-carousel" class="owl-carousel owl-theme feat-prod-carousel">
-                <div class="item">
+                <div class="item main-wrapper">
                     <a href="#" class="wrapper-link">
                         <div class="img-container">
                             <img src="https://ucarecdn.com/922be2d1-2307-4e9f-abcd-b406c82531dc/" alt="" srcset="">
