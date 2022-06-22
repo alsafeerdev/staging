@@ -15,7 +15,7 @@ $loop = new WP_Query($args); ?>
 
                <a href="<?php echo get_permalink(); ?>" target="_blank" class="portfolio-link">
             <!-- Item Main Container -->
-            <div data-blink-src='<?php echo $feat_image_url; ?>' class="item" style="background-position: center;">
+            <div data-blink-src='<?php echo $feat_image_url; ?>' class="item portfolio-item" style="background-position: center;">
              
                     <div class="project-category">
                         <?php
