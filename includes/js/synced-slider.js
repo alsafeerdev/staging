@@ -1,90 +1,113 @@
-jQuery(document).ready(function() {
-    var bigimage = jQuery("#big");
-    var thumbs = jQuery("#thumbs");
-    //var totalslides = 10;
-    var syncedSecondary = true;
-  
-    bigimage
-      .owlCarousel({
+jQuery(document).ready(function () {
+  var bigimage = jQuery("#big");
+  var thumbs = jQuery("#thumbs");
+  //var totalslides = 10;
+  var syncedSecondary = true;
+
+  bigimage
+    .owlCarousel({
       items: 1,
       slideSpeed: 2000,
       nav: true,
-      autoplay:true,
+      autoplay: true,
       dots: false,
       loop: true,
-      autoHeight:true,
-      margin:10,
+      autoHeight: true,
+      margin: 10,
       responsiveRefreshRate: 200,
+      responsiveClass: true,
+      responsive: {
+
+        0: {
+          nav: false,
+        },
+        460: {
+          nav: false,
+        },
+        1000: {
+          nav: true,
+        }
+
+      },
       navText: [jQuery('.prev-btn-big-img'), jQuery('.next-btn-big-img')]
     })
-      .on("changed.owl.carousel", syncPosition);
-  
-    thumbs
-      .on("initialized.owl.carousel", function() {
+    .on("changed.owl.carousel", syncPosition);
+
+  thumbs
+    .on("initialized.owl.carousel", function () {
       thumbs
         .find(".owl-item")
         .eq(0)
         .addClass("current");
     })
-      .owlCarousel({
+    .owlCarousel({
       items: 6,
-      dots:false,
+      responsiveClass: true,
+      responsive: {
+
+        0: {
+          items: 4
+        },
+        460: {
+          items: 6
+        }
+      },
+      dots: false,
       smartSpeed: 200,
       slideSpeed: 500,
       slideBy: 4,
       responsiveRefreshRate: 100
     })
-      .on("changed.owl.carousel", syncPosition2);
-  
-    function syncPosition(el) {
-      //if loop is set to false, then you have to uncomment the next line
-      //var current = el.item.index;
-  
-      //to disable loop, comment this block
-      var count = el.item.count - 1;
-      var current = Math.round(el.item.index - el.item.count / 2 - 0.5);
-  
-      if (current < 0) {
-        current = count;
-      }
-      if (current > count) {
-        current = 0;
-      }
-      //to this
-      thumbs
-        .find(".owl-item")
-        .removeClass("current")
-        .eq(current)
-        .addClass("current");
-      var onscreen = thumbs.find(".owl-item.active").length - 1;
-      var start = thumbs
+    .on("changed.owl.carousel", syncPosition2);
+
+  function syncPosition(el) {
+    //if loop is set to false, then you have to uncomment the next line
+    //var current = el.item.index;
+
+    //to disable loop, comment this block
+    var count = el.item.count - 1;
+    var current = Math.round(el.item.index - el.item.count / 2 - 0.5);
+
+    if (current < 0) {
+      current = count;
+    }
+    if (current > count) {
+      current = 0;
+    }
+    //to this
+    thumbs
+      .find(".owl-item")
+      .removeClass("current")
+      .eq(current)
+      .addClass("current");
+    var onscreen = thumbs.find(".owl-item.active").length - 1;
+    var start = thumbs
       .find(".owl-item.active")
       .first()
       .index();
-      var end = thumbs
+    var end = thumbs
       .find(".owl-item.active")
       .last()
       .index();
-  
-      if (current > end) {
-        thumbs.data("owl.carousel").to(current, 100, true);
-      }
-      if (current < start) {
-        thumbs.data("owl.carousel").to(current - onscreen, 100, true);
-      }
+
+    if (current > end) {
+      thumbs.data("owl.carousel").to(current, 100, true);
     }
-  
-    function syncPosition2(el) {
-      if (syncedSecondary) {
-        var number = el.item.index;
-        bigimage.data("owl.carousel").to(number, 100, true);
-      }
+    if (current < start) {
+      thumbs.data("owl.carousel").to(current - onscreen, 100, true);
     }
-  
-    thumbs.on("click", ".owl-item", function(e) {
-      e.preventDefault();
-      var number = jQuery(this).index();
-      bigimage.data("owl.carousel").to(number, 300, true);
-    });
+  }
+
+  function syncPosition2(el) {
+    if (syncedSecondary) {
+      var number = el.item.index;
+      bigimage.data("owl.carousel").to(number, 100, true);
+    }
+  }
+
+  thumbs.on("click", ".owl-item", function (e) {
+    e.preventDefault();
+    var number = jQuery(this).index();
+    bigimage.data("owl.carousel").to(number, 300, true);
   });
-  
+});
