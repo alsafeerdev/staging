@@ -138,6 +138,7 @@ div.feat-prods-carousel .owl-nav {
     align-content: center;
     align-items: center;
     background: #fff;
+    min-height: 317px;
 }
 .feat-prod-carousel h3.title {
     font-family: 'PT Serif';
