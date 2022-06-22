@@ -136,14 +136,13 @@ jQuery(document).ready(function () {
 jQuery(document).ready(function () {
   jQuery("#feat-prods-mb-carousel").owlCarousel({
     loop: true,
-    margin: 5,
-    autoplay: true,
+    margin: 10,
     nav: false,
-    dots: false,
-    autoplaySpeed: 2500,
-    slideTransition: 'ease',
-    responsiveClass: true,
+    dots:false,
     items: 1,
+    autoplay:true,
+    stagePadding:10,
+    center:true
   });
 });
 
