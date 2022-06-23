@@ -192,15 +192,15 @@ jQuery(document).ready(function () {
     responsive: {
       0: {
         items: 1,
+        nav: false,
+        margin: 45,
       },
       600: {
         items: 2,
+        margin: 45,
       },
       1000: {
         items: 3,
-      },
-      1800: {
-        items: 4,
       }
     },
   });
