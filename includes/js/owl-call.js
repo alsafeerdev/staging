@@ -15,15 +15,15 @@ jQuery(document).ready(function () {
     autoplaySpeed: 2500,
     slideTransition: 'ease',
     autoWidth: false,
-    center:true,
+    center: true,
     animateOut: 'fadeOut',
     animateIn: 'fadeIn',
     navText: [jQuery('.am-prev'), jQuery('.am-next')],
-    responsiveClass:true,
+    responsiveClass: true,
     responsive: {
       0: {
         items: 1,
-        nav:false
+        nav: false
       },
       600: {
         items: 1,
@@ -57,8 +57,8 @@ jQuery(document).ready(function () {
       0: {
         items: 1,
         center: false,
-        nav:false,
-        dots:false    
+        nav: false,
+        dots: false
       },
       600: {
         items: 2,
@@ -116,7 +116,6 @@ jQuery(document).ready(function () {
     lazyLoad: true,
     loop: true,
     margin: 65,
-    center: true,
     dots: true,
     dotsEach: 3,
     autoplay: true,
@@ -129,13 +128,12 @@ jQuery(document).ready(function () {
     responsive: {
       0: {
         items: 1,
-        nav:false,
-        margin:10,
+        nav: false,
+        margin: 10,
       },
       600: {
         items: 2,
         margin: 10,
-        center:true,
       },
       1000: {
         items: 3,
@@ -164,12 +162,11 @@ jQuery(document).ready(function () {
     responsive: {
       0: {
         items: 1,
-        items: false,
+        nav: false,
       },
       600: {
         items: 2,
         margin: 10,
-        center:true,
       },
       1000: {
         items: 3,
@@ -261,7 +258,7 @@ jQuery(document).ready(function () {
     responsive: {
       0: {
         items: 1,
-        nav:false
+        nav: false
       },
       600: {
         items: 3,
