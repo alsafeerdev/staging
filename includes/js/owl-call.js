@@ -149,7 +149,6 @@ jQuery(document).ready(function () {
     lazyLoad: true,
     loop: true,
     margin: 65,
-    center: true,
     dots: true,
     dotsEach: 3,
     autoplay: true,
