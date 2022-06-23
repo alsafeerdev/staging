@@ -34,7 +34,7 @@ $loop = new WP_Query($args); ?>
                                         <?php echo get_the_excerpt(); ?>
                                     </p>
                                     <p class="know-more">
-                                        Know More
+                                        Learn more
                                     </p>
                                 </div>
                             </a>
