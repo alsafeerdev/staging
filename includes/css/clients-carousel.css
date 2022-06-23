@@ -40,10 +40,12 @@ div.clients-carousel .owl-nav {
 
 #clients-carousel button.owl-prev {
     position: relative;
-    right: 45px;
+    right: 0px;
+    z-index: 10;
 }
 
 #clients-carousel button.owl-next {
     position: relative;
-    left: 35px;
+    left: 0px;
+    z-index: 10;
 }
