@@ -130,6 +130,7 @@ jQuery(document).ready(function () {
     responsive: {
       0: {
         items: 1,
+        nav:false,
       },
       600: {
         items: 2,
@@ -162,6 +163,7 @@ jQuery(document).ready(function () {
     responsive: {
       0: {
         items: 1,
+        items: false,
       },
       600: {
         items: 2,
