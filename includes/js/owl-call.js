@@ -129,7 +129,7 @@ jQuery(document).ready(function () {
       0: {
         items: 1,
         nav: false,
-        margin: 10,
+        margin: 45,
       },
       600: {
         items: 2,
