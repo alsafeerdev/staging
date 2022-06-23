@@ -42,9 +42,11 @@ jQuery(document).ready(function () {
     responsive: {
       0: {
         items: 1,
+        center: false,
       },
       600: {
         items: 2,
+        center: false,
       },
       1000: {
         items: 3,
