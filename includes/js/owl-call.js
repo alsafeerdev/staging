@@ -5,7 +5,7 @@ jQuery(document).ready(function () {
     lazyLoad: true,
     loop: true,
     margin: 25,
-    stagePadding:10,
+    stagePadding: 10,
     items: 1,
     center: true,
     dots: true,
@@ -38,7 +38,21 @@ jQuery(document).ready(function () {
     slideTransition: 'ease',
     stagePadding: 35,
     navText: [jQuery('.prev-btn'), jQuery('.next-btn')],
-    responsive: false,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      1000: {
+        items: 3,
+      },
+      1800: {
+        items: 3,
+      }
+    },
   });
 });
 
@@ -59,6 +73,21 @@ jQuery(document).ready(function () {
     slideTransition: 'ease',
     stagePadding: 35,
     navText: [jQuery('.prev-btn-light'), jQuery('.next-btn-light')],
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      1000: {
+        items: 3,
+      },
+      1800: {
+        items: 3,
+      }
+    },
   });
 });
 
@@ -139,11 +168,11 @@ jQuery(document).ready(function () {
     loop: true,
     margin: 12,
     nav: false,
-    dots:false,
+    dots: false,
     items: 1,
-    autoplay:true,
-    stagePadding:10,
-    center:true
+    autoplay: true,
+    stagePadding: 10,
+    center: true
   });
 });
 
