@@ -11,7 +11,7 @@ img.promo-feat-image {
     padding: 26px 20px 36px 20px;
     border-radius: 0px 0px 10px 10px;
     background: #fff;
-    min-height: 275px;
+    /* min-height: 275px; */
 }
 
 h3.promo-title {
