@@ -116,7 +116,6 @@ jQuery(document).ready(function () {
     lazyLoad: true,
     loop: true,
     margin: 65,
-    items: 3,
     center: true,
     dots: true,
     dotsEach: 3,
@@ -131,9 +130,12 @@ jQuery(document).ready(function () {
       0: {
         items: 1,
         nav:false,
+        margin:10,
       },
       600: {
         items: 2,
+        margin: 10,
+        center:true,
       },
       1000: {
         items: 3,
@@ -149,7 +151,6 @@ jQuery(document).ready(function () {
     lazyLoad: true,
     loop: true,
     margin: 65,
-    items: 3,
     center: true,
     dots: true,
     dotsEach: 3,
@@ -167,6 +168,8 @@ jQuery(document).ready(function () {
       },
       600: {
         items: 2,
+        margin: 10,
+        center:true,
       },
       1000: {
         items: 3,
