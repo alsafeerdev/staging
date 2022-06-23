@@ -133,7 +133,7 @@ jQuery(document).ready(function () {
       },
       600: {
         items: 2,
-        margin: 10,
+        margin: 45,
       },
       1000: {
         items: 3,
@@ -163,10 +163,11 @@ jQuery(document).ready(function () {
       0: {
         items: 1,
         nav: false,
+        margin: 45,
       },
       600: {
         items: 2,
-        margin: 10,
+        margin: 45,
       },
       1000: {
         items: 3,
