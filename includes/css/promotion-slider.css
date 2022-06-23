@@ -168,20 +168,20 @@ div.promotions-carousel > .owl-stage-outer {
 
 #promotions-carousel button.owl-prev {
     position: relative;
-    right: 35px;
+    right: 5px;
 }
 
 #promotions-carousel button.owl-next {
     position: relative;
-    left: 35px;
+    left: 5px;
 }
 
 #promotions-carousel-light button.owl-prev {
     position: relative;
-    right: 35px;
+    right: 5px;
 }
 
 #promotions-carousel-light button.owl-next {
     position: relative;
-    left: 35px;
+    left: 5px;
 }
