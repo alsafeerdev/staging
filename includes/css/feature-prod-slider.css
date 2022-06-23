@@ -44,12 +44,6 @@ p.feat-prods-know-more {
     padding: 10px 20px;
 }
 
-
-/* div#feat-prods-carousel {
-    max-width: 69%;
-    margin: auto;
-} */
-
 div.owl-item.active img.feat-prods-feat-image:nth-child(4n) {
     min-height: 432px;
 }
