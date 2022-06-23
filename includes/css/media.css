@@ -31,10 +31,6 @@
         padding: 3px 10px;
     }
 
-    #promotions-carousel button.owl-next {
-        left: -3096px;
-    }
-
 }
 
 @media (max-width: 1366px) {
@@ -42,4 +38,5 @@
     .elementor-2294 .elementor-element.elementor-element-bc22980 .elementor-post__text {
         margin-bottom: 0px !important;
     }
+    
 }

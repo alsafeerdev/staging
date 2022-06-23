@@ -43,6 +43,8 @@ jQuery(document).ready(function () {
       0: {
         items: 1,
         center: false,
+        nav:false,
+        dots:false    
       },
       600: {
         items: 2,
