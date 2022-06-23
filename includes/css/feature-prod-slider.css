@@ -37,24 +37,18 @@ p.feat-prods-exerpt {
 }
 
 p.feat-prods-know-more {
-    /* font-family: "PT Sans"; */
-    /* font-weight: bold; */
-    /* font-size: 16px; */
     letter-spacing: 0.05em;
-    /* text-align: center; */
     color: #fff;
     border-radius: 30px;
     background: #fd746c;
     padding: 10px 20px;
-    /* width: fit-content; */
-    /* margin: 0; */
 }
 
 
-div#feat-prods-carousel {
+/* div#feat-prods-carousel {
     max-width: 69%;
     margin: auto;
-}
+} */
 
 div.owl-item.active img.feat-prods-feat-image:nth-child(4n) {
     min-height: 432px;
