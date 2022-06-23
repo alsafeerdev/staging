@@ -121,8 +121,18 @@ nav.elementor-pagination {
     justify-content: flex-start;
     align-items: center;
 }
+
 a.page-numbers {
     margin-top: 10px;
+    padding: 3px 10px;
+}
+
+span.page-numbers.current {
+    padding: 3px 10px;
+}
+
+a.page-numbers.next {
+    padding: 4px 15px;
 }
 
 span.page-numbers {
@@ -149,4 +159,3 @@ i.eicon-share-arrow {
 img.feat-prods-mb-feat-image {
     max-width: 350px;
 }
-
