@@ -1,0 +1,66 @@
+.thumbnail-carousel-item {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+img.synced-thumb-img {
+    border-radius: 10px;
+}
+
+.owl-item.active.current img {
+    border-radius: 10px;
+    border: 5px solid #fd746c;
+    box-shadow: 0px 0px 11px 0px #0000009c;
+}
+
+.big-image-carousel-item {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+img.synced-big-img {
+    height: 850px;
+    width: 850px;
+    object-fit: cover;
+}
+
+.owl-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 50%;
+}
+
+#big button.owl-prev {
+    position: relative;
+    right: -25px;
+    transform: rotateY(180deg);
+}
+
+#big button.owl-next {
+    position: relative;
+    left: -25px;
+}
+
+div.white-h-bg .owl-nav [class*='owl-']:hover {
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+.synced-slider-big-img-cust-nav {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding: 10px !important;
+}
+
+img.synced-big-img {
+    border-radius: 10px;
+}
+
+.thumbnail-carousel .owl-dots {
+    display: none;
+}
