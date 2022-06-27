@@ -1,8 +1,0 @@
-{
-    "version": 3,
-    "sources": [
-        "style.css"
-    ],
-    "names": [],
-    "mappings": "AAYA,sCACI,QAAS,eAIb,oBACE,MAAO,IAIT,0BACE,WAAY,MAAM,EAAE,EAAE,IAAI,QAC1B,cAAe,KACf,WAAW,QAKb,0BACE,WAAY,QACZ,cAAe,KAGjB,QACE,MAAO,QACP,gBAAiB,eAGnB,yGACE,cAAe,eAGjB,0GACE,cAAe"
-}
