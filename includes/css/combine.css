@@ -155,7 +155,10 @@ i.eicon-share-arrow {
     height: 540px;
 } */
 
-
 img.feat-prods-mb-feat-image {
     max-width: 350px;
+}
+
+.vid-container {
+    width: fit-content;
 }
