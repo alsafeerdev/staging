@@ -8,7 +8,7 @@ if ($images) :
 
 <?php
 
-var_dump($image); ?>
+var_dump($image); die(); ?>
 
 
 <?php endforeach; ?>
