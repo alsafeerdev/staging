@@ -2,28 +2,32 @@
 
 <?php if ($images) : ?>
 
+    <div class="container">
+        <div class="row">
+            <div class="vid-thumb-container">
+                <?php foreach ($images as $image) : ?>
+                    <?php
 
-    <?php foreach ($images as $image) : ?>
+                    $vid_url = $image['url'];
+                    $vid_type = $image['mime_type'];
+                    ?>
 
-        <?php
+                    <div class="col-md-6">
 
-        $vid_url = $image['url'];
-        $vid_type = $image['mime_type'];
-        $vid_width = $image['width'];
-        $vid_height = $image['height'];
-        ?>
+                        <div class="vid-container">
 
-        <div class="vid-thumb-container">
+                            <video width="600" height="600" controls>
 
-            <video width="450" height="450" controls>
+                                <source src="<?php echo $vid_url ?>" type="<?php echo $vid_type ?>">
+                                Your browser does not support the video tag.
+                            </video>
 
-                <source src="<?php echo $vid_url ?>" type="<?php echo $vid_type ?>">
-                Your browser does not support the video tag.
-            </video>
 
+                        </div>
+                    </div>
+
+                <?php endforeach; ?>
+            </div>
         </div>
-
-
-    <?php endforeach; ?>
-
+    </div>
 <? endif; ?>
