@@ -1,14 +1,14 @@
-<?php
+<?php $images = get_field('video_gallery'); ?>
 
-$images = get_field('video_gallery');
-
-if ($images) :
+<?php if ($images) : ?>
 
 
-    foreach ($images as $image) :
+    <?php foreach ($images as $image) : ?>
 
-        echo $image['url'];
+    <?php var_dump($image);
+        die(); ?>
 
-    endforeach;
 
-endif;
+    <?php endforeach; ?>
+
+<? endif; ?>
