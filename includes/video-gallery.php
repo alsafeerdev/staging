@@ -7,7 +7,7 @@ if ($images) :
 
     foreach ($images as $image) :
 
-        echo $image['sizes']['thumbnail'];
+        echo $image['url'];
 
     endforeach;
 
