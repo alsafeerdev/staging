@@ -10,7 +10,7 @@
                 ?>
                 <div class="col-md-6">
                     <div class="vid-container" style="width:fit-content">
-                        <video width="600" height="600" controls>
+                        <video width="600" height="600" controls controlsList="nodownload">
                             <source src="<?php echo $vid_url ?>" type="<?php echo $vid_type ?>">
                             Your browser does not support the video tag.
                         </video>
