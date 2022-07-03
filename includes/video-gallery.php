@@ -2,9 +2,10 @@
 
 <?php if ($images) : ?>
 
- <?php foreach ($image as $images) : ?>
+ <?php foreach ($images as $image) : ?>
 
-<?php var_dump($image);die(); ?>
+<?php var_dump($image);
+        die(); ?>
 
 <?php endforeach; ?>
 <?php endif; ?>
