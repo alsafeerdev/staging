@@ -5,9 +5,15 @@
 
     <?php foreach ($images as $image) : ?>
 
-    <?php var_dump($image);
-        die(); ?>
+        <?php
 
+        $vid_url = $image['url'];
+        $vid_type = $image['mime_type'];
+        $vid_width = $image['width'];
+        ?>
+
+
+<?php echo $vid_url . $vid_type . $vid_width ?>
 
     <?php endforeach; ?>
 
