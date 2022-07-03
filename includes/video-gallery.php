@@ -1,7 +1,7 @@
 <?php $images = get_field('video_gallery'); ?>
 
 <?php if ($images) : ?>
-    <div class="container">
+    <div class="container mb-5">
         <div class="row">
             <?php foreach ($images as $image) : ?>
                 <?php
