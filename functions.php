@@ -288,7 +288,7 @@ add_action('wp_enqueue_scripts', 'image_optimize_js');
 
 function media_queries()
 {
-    wp_enqueue_style('media-queries', get_stylesheet_directory_uri() . '/includes/css/min/media.min.css', 'all', 1.8 );
+    wp_enqueue_style('media-queries', get_stylesheet_directory_uri() . '/includes/css/min/media.min.css', 'all', 1.8);
 }
 
 add_action('wp_enqueue_scripts', 'media_queries');
@@ -313,3 +313,13 @@ function feat_products_mb()
 
 add_shortcode('feat-prod-mb', 'feat_products_mb');
 
+// Dynamic Video Gallery
+
+function dynamic_video_gallery()
+{
+    ob_start();
+    get_template_part( 'includes/video', 'gallery' );
+    return ob_get_clean();
+}
+
+add_shortcode( 'dynamic-video-gallery', 'dynamic_video_gallery' );
