@@ -1,6 +1,4 @@
-<?php
-
-$images = get_field('video_gallery'); ?>
+<?php $images = get_field('video_gallery'); ?>
 
 <?php if ($images) : ?>
 
