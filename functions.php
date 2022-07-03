@@ -323,3 +323,4 @@ function dynamic_video_gallery()
 }
 
 add_shortcode( 'dynamic-video-gallery', 'dynamic_video_gallery' );
+
