@@ -2,11 +2,12 @@
 $args = array(
     'post_type' => 'clients_logo',
     'order' => 'ASC',
-    'orderby' => 'ID'
+    'orderby' => 'rand',
+    'posts_per_page' => 75
 );
 $loop = new WP_Query($args); ?>
 
-<div id="clients-carousel" class="owl-carousel owl-theme clients-carousel dark-dots">
+<div id="clients-carousel" class="owl-carousel owl-theme clients-carousel dark-dots my-3">
 
     <?php if ($loop->have_posts()) : ?>
         <?php while ($loop->have_posts()) :

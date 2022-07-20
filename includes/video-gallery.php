@@ -8,9 +8,9 @@
                 $vid_url = $image['url'];
                 $vid_type = $image['mime_type'];
                 ?>
-                <div class="col-md-6">
+                <div class="col-md-6 mb-3">
                     <div class="vid-container" style="width:fit-content">
-                        <video width="600" height="600" controls controlsList="nodownload">
+                        <video width="600" controls controlsList="nodownload">
                             <source src="<?php echo $vid_url ?>" type="<?php echo $vid_type ?>">
                             Your browser does not support the video tag.
                         </video>
