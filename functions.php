@@ -49,7 +49,6 @@ function add_custom_css()
     wp_enqueue_style('splide-theme-css', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/splide-theme.min.css', array(), null, 'all');
     wp_enqueue_style('promotions-slider-css', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/promotion-slider.min.css', array(), null, 'all');
     wp_enqueue_style('services-slider-css', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/services-slider.min.css', array(), null, 'all');
-    wp_enqueue_style('portfolio-grid-css', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/ajax-portfolio-grid.min.css', array(), null, 'all');
     wp_enqueue_style('clients-carousel', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/clients-carousel.min.css', array(), null, 'all');
     wp_enqueue_style('synced-slider-styles', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/synced-slider.min.css', array(), null, 'all');
     wp_enqueue_style('media-queries', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/media.min.css', array(), null, 'all');
@@ -128,21 +127,6 @@ function services_slider_dark_bg()
 add_shortcode('services-sliderDarkBG', 'services_slider_dark_bg');
 
 // Custom Slider for Services Dark BG END
-
-
-// Ajax Portfolio Grid
-// JS
-
-
-// Shortcode
-function ajax_portfolio_grid()
-{
-    ob_start();
-    get_template_part('includes/ajax', 'portfolioGrid');
-    return ob_get_clean();
-}
-
-add_shortcode('ajax-portfolio-grid', 'ajax_portfolio_grid');
 
 // Featured Products Slider
 
