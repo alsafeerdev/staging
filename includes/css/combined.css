@@ -168,3 +168,13 @@ div.feat-prods-carousel .owl-stage-outer {
 }
 
 /* PRODUCT ARCHIVE GRID STYLES END */
+
+/* COUNTER SUFFIX */
+
+span.elementor-counter-number-suffix {
+    font-size: 50px;
+    align-self: end;
+}
+
+/* COUNTER SUFFIX END */
+
