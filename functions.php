@@ -24,7 +24,6 @@ function child_enqueue_styles()
 
 add_action('wp_enqueue_scripts', 'child_enqueue_styles', 15);
 
-// Custom Product Grid
 
 // Add Carousel JS Files
 
@@ -42,7 +41,6 @@ add_action('wp_enqueue_scripts', 'add_carousel_js');
 function add_custom_css()
 {
     wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css', array(), null, 'all');
-    wp_enqueue_style('product-grid-css', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/product-grid-styles.min.css', array(), null, 'all');
     wp_enqueue_style('featured-prod-slider', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/feature-prod-slider.min.css', array(), null, 'all');
     wp_enqueue_style('combines-styles', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/combine.min.css', array(), null, 'all');
     wp_enqueue_style('owl-default-css', 'https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css', array(), null, 'all');
@@ -270,7 +268,7 @@ function wpf_dev_profanity_filter_paragraph($field_id, $field_submit, $form_data
         '.ru',
         'fuck',
         'https://adultgames.life/',
-        '.life',
+        '.life'
 
     );
 
