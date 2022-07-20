@@ -167,6 +167,27 @@ div.feat-prods-carousel .owl-stage-outer {
     padding-bottom: 0px;
 }
 
+a.page-numbers {
+    margin-top: 10px;
+    padding: 3px 10px;
+}
+
+span.page-numbers.current {
+    padding: 3px 10px;
+}
+
+a.page-numbers.next {
+    padding: 4px 15px;
+}
+
+span.page-numbers {
+    margin-top: 10px;
+}
+
+ul.cat-list {
+    margin-left: 0;
+}
+
 /* PRODUCT ARCHIVE GRID STYLES END */
 
 /* COUNTER SUFFIX */
@@ -178,3 +199,36 @@ span.elementor-counter-number-suffix {
 
 /* COUNTER SUFFIX END */
 
+/* LANGUAGE SWITCHER STYLES */
+
+ul.sub-menu .elementor-nav-menu--dropdown .sm-nowrap {
+    border-radius: 10px;
+}
+
+.lang-item,
+a.elementor-sub-item.menu-link {
+    border-radius: 10px;
+}
+
+nav.elementor-pagination {
+    display: flex;
+    margin-top: 45px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* LANGUAGE SWITCHER STYLES END */
+
+/* IMAGE SLIDE SHOW STYLES */
+
+.elementor-slideshow__title {
+    display: none;
+}
+
+i.eicon-share-arrow {
+    display: none;
+}
+
+/* IMAGE SLIDE SHOW STYLES END */

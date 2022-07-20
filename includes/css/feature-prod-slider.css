@@ -141,3 +141,7 @@ div.feat-prods-carousel .owl-nav {
     font-weight: 400;
     font-size: 16px;
 }
+
+img.feat-prods-mb-feat-image {
+    max-width: 350px;
+}
