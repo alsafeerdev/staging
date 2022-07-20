@@ -15,4 +15,4 @@ jobs:
         username: admin@alsafeeradvt.com
         password: ${{ secrets.FTP_PASS_ALSAFEER }}
         port: 21
-        server-dir: /public_html/wp-content/themes/alsafeer-child-theme/
+        server-dir: /staging.alsafeeradvt.com/wp-content/themes/alsafeer-child-theme/
