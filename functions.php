@@ -187,15 +187,6 @@ function cat_list()
 
 add_shortcode('cat-list', 'cat_list');
 
-
-function particles_js()
-{
-    wp_enqueue_script('particles-js', 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js',  array(), null, true);
-}
-add_action('wp_enqueue_scripts', 'particles_js');
-
-
-
 function image_optimize_js()
 {
     wp_enqueue_script('image-optimize-js', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/js/min/image-optimize.min.js', null, false);
