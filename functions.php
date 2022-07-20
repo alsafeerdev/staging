@@ -211,18 +211,6 @@ add_action('elementor/frontend/after_register_styles', function () {
     }
 }, 20);
 
-
-// Featured Products Carousel for mobile devices
-
-function feat_products_mb()
-{
-    ob_start();
-    get_template_part('includes/featprod', 'm');
-    return ob_get_clean();
-}
-
-add_shortcode('feat-prod-mb', 'feat_products_mb');
-
 // Remove instant-page.JS
 
 function remove_instant_page_js()
