@@ -8,3 +8,6 @@ Live website link - https://alsafeeradvt.com/
 
 Staging environment can be viewed on https://staging.alsafeeradvt.com/
 
+# 20 - 07 - 2022
+
+Restored Files from Production
