@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Alsafeer Publishing & Adverting Theme functions and definitions
  *
@@ -8,12 +7,10 @@
  * @package Alsafeer Publishing & Adverting
  * @since 1.0.0
  */
-
 /**
  * Define Constants
  */
 define('CHILD_THEME_ALSAFEER_PUBLISHING_ADVERTING_VERSION', '1.0.0');
-
 /**
  * Enqueue styles
  */
@@ -21,9 +18,7 @@ function child_enqueue_styles()
 {
     wp_enqueue_style('alsafeer-publishing-adverting-theme-css', get_stylesheet_directory_uri() . '/style.css', array('astra-theme-css'), CHILD_THEME_ALSAFEER_PUBLISHING_ADVERTING_VERSION, 'all');
 }
-
 add_action('wp_enqueue_scripts', 'child_enqueue_styles', 15);
-
 
 // Add Carousel JS Files
 
@@ -34,7 +29,6 @@ function add_carousel_js()
 }
 
 add_action('wp_enqueue_scripts', 'add_carousel_js');
-
 
 // Add Bootstrap
 
@@ -59,7 +53,6 @@ add_filter('excerpt_more', function ($more) {
     return '...';
 }, 30);
 
-
 // Portfolio Slider
 function portfolio_slider()
 {
@@ -70,11 +63,7 @@ function portfolio_slider()
 
 add_shortcode('portfolio-slider', 'portfolio_slider');
 
-
-// Custom Slider for Portfolio END 
-
 // Custom Slider for Promotions
-
 
 function promotions_slider()
 {
@@ -84,8 +73,6 @@ function promotions_slider()
 }
 
 add_shortcode('promotions-slider', 'promotions_slider');
-
-// Custom Slider for Promotions END
 
 // Custom Slider for Promotions Light BG
 
@@ -98,8 +85,6 @@ function promotions_slider_light_bg()
 
 add_shortcode('promotions-sliderLightBG', 'promotions_slider_light_bg');
 
-// Custom Slider for Promotions Light BG END
-
 // Custom Slider for Services
 
 function services_slider()
@@ -111,8 +96,6 @@ function services_slider()
 
 add_shortcode('services-slider', 'services_slider');
 
-// Custom Slider for Servives END
-
 // Custom Slider for Services Dark BG
 
 function services_slider_dark_bg()
@@ -123,8 +106,6 @@ function services_slider_dark_bg()
 }
 
 add_shortcode('services-sliderDarkBG', 'services_slider_dark_bg');
-
-// Custom Slider for Services Dark BG END
 
 // Featured Products Slider
 
@@ -148,10 +129,7 @@ function products_slider()
 
 add_shortcode('products-slider', 'products_slider');
 
-
 // Clients Carousel
-
-// Register Short code
 
 function clients_carousel()
 {
@@ -164,8 +142,6 @@ add_shortcode('clients-carousel', 'clients_carousel');
 
 // Synced Slider Gallery 
 
-// Register Shortcode and JS
-
 function synced_slider_gallery()
 {
     wp_enqueue_script('synced-slider-scripts', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/js/min/synced-slider.min.js', array('owl-default'), null, true);
@@ -174,7 +150,6 @@ function synced_slider_gallery()
     return ob_get_clean();
 }
 add_shortcode('synced-slider', 'synced_slider_gallery');
-
 
 // Cat List
 
