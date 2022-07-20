@@ -13,6 +13,6 @@ jobs:
       with:
         server: 162.215.248.223
         username: admin@alsafeeradvt.com
-        password: ${{ secrets.FTP_PASS_ALSAFEER }}
+        password: ${{ secrets.FTP_PASS }}
         port: 21
         server-dir: /staging.alsafeeradvt.com/wp-content/themes/alsafeer-child-theme/
