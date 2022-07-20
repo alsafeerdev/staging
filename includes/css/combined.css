@@ -127,4 +127,44 @@ div.clients-carousel .owl-nav {
     background: #676767;
 }
 
-/* OWL CAROUSEL DEFAULT THEME END*/
+/* OWL CAROUSEL DEFAULT THEME END */
+
+/* PRODUCT ARCHIVE GRID STYLES */
+
+article.elementor-post.elementor-grid-item.status-publish.has-post-thumbnail.hentry.ast-grid-common-col.ast-full-width {
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 10px #000; */
+    box-shadow: 0px 0px 30px rgb(0 0 0 / 16%);
+}
+
+.elementor-post__text {
+    padding: 10px 25px;
+    text-align: center;
+}
+
+a.elementor-post__read-more {
+    background: #fd746c;
+    font-family: "PT Sans";
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #fff;
+    padding: 12px 26px;
+    border-radius: 30px;
+}
+
+.elementor-post__read-more-wrapper {
+    margin: 20px 0px;
+}
+
+a.elementor-post__read-more:hover {
+    background: #f24032;
+    box-shadow: 0 0 16px -6px #000;
+}
+
+div.feat-prods-carousel .owl-stage-outer {
+    padding-bottom: 0px;
+}
+
+/* PRODUCT ARCHIVE GRID STYLES END */
