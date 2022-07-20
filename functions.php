@@ -38,7 +38,7 @@ function add_custom_css()
     wp_enqueue_style( 'combined-css', 'https://cdn.jsdelivr.net/gh/alsafeerdev/staging@main/includes/css/min/combined.min.css',array(), null, 'all' );
     // wp_enqueue_style('featured-prod-slider', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/feature-prod-slider.min.css', array(), null, 'all');
     // wp_enqueue_style('combines-styles', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/combine.min.css', array(), null, 'all');
-    // wp_enqueue_style('owl-default-css', 'https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css', array(), null, 'all');
+    wp_enqueue_style('owl-default-css', 'https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css', array(), null, 'all');
     // wp_enqueue_style('splide-theme-css', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/splide-theme.min.css', array(), null, 'all');
     // wp_enqueue_style('promotions-slider-css', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/promotion-slider.min.css', array(), null, 'all');
     // wp_enqueue_style('services-slider-css', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/services-slider.min.css', array(), null, 'all');
