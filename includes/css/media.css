@@ -1,67 +1,61 @@
 /* Mobile Display  */
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+  span.elementor-counter-number-suffix {
+    font-size: 20px;
+  }
 
-    span.elementor-counter-number-suffix {
-        font-size: 20px;
-    }
+  .elementor-2294
+    .elementor-element.elementor-element-bc22980
+    .elementor-post__text {
+    margin-bottom: 0px !important;
+  }
 
-    .elementor-2294 .elementor-element.elementor-element-bc22980 .elementor-post__text {
-        margin-bottom: 0px !important;
-    }
+  h3.portfolio-catergory-grid {
+    font-size: 16px;
+  }
 
-    h3.portfolio-catergory-grid {
-        font-size: 16px;
-    }
+  a.page-numbers,
+  span.page-numbers {
+    padding: 3px 10px;
+  }
 
-    a.page-numbers,
-    span.page-numbers {
-        padding: 3px 10px;
-    }
+  span.page-numbers.current {
+    padding: 3px 10px;
+  }
 
-    span.page-numbers.current {
-        padding: 3px 10px;
-    }
+  .project-category {
+    padding: 15px 65px 15px 30px;
+  }
 
-
-    .project-category {
-        padding: 15px 65px 15px 30px;
-    }
-
-    .project-name {
-        padding: 15px 30px 15px 65px;
-    }
-
+  .project-name {
+    padding: 15px 30px 15px 65px;
+  }
 }
 
 /* Tablets */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-
-    .service-content.text-center {
-        min-height: 290px;
-    }
-
+  .service-content.text-center {
+    min-height: 290px;
+  }
 }
 
 /* Laptop Screens */
 @media only screen and (min-width: 1025px) and (max-width: 1336px) {
-
-    .elementor-2294 .elementor-element.elementor-element-bc22980 .elementor-post__text {
-        margin-bottom: 0px !important;
-    }
-
+  .elementor-2294
+    .elementor-element.elementor-element-bc22980
+    .elementor-post__text {
+    margin-bottom: 0px !important;
+  }
 }
 
-
 /* Large Screens */
-@media screen and (max-width:1800px) {
+@media screen and (max-width: 1800px) {
+  .clients-carousel.owl-item {
+    margin-right: 35px;
+  }
 
-    .clients-carousel.owl-item {
-        margin-right: 35px;
-    }
-
-    .promo-content {
-        min-height: 270px;
-    }
-
+  .promo-content {
+    min-height: 270px;
+  }
 }
