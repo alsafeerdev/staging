@@ -36,7 +36,7 @@ add_action('wp_enqueue_scripts', 'add_carousel_js');
 function add_custom_css()
 {
     wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css', array(), null, 'all');
-    wp_enqueue_style('combined-css', 'https://github.com/alsafeerdev/staging/blob/main/includes/css/combine.css', array(), null, 'all');
+    wp_enqueue_style('combined-css', 'https://github.com/alsafeerdev/staging/blob/main/includes/css/min/combined.min.css', array(), null, 'all');
     wp_enqueue_style('owl-default-css', 'https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css', array(), null, 'all');
     wp_enqueue_style('media-queries', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/media.min.css', array(), null, 'all');
     // wp_enqueue_style('featured-prod-slider', 'https://cdn.jsdelivr.net/gh/alsafeerdev/main_web@main/includes/css/min/feature-prod-slider.min.css', array(), null, 'all');
