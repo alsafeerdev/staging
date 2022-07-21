@@ -8,11 +8,63 @@ This was made for optimized CSS delivery
 
 All style sheet data is divided with comment with the name of the respective CSS file name.
 
-Always maintain style sheet order in alphabetical order
-
 Always do changes on main CSS file and Update on this file to avoid confutions
 
 */
+
+/* OWL CAROUSEL DEFAULT */
+
+.owl-theme .owl-nav {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.owl-theme .owl-nav [class*="owl-"] {
+  color: #fff;
+  font-size: 14px;
+  margin: 5px;
+  padding: 4px 7px;
+  background: #c2c2c2;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: #676767;
+  color: #fff;
+  text-decoration: none;
+}
+
+.owl-theme .owl-nav .disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.owl-theme .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #c2c2c2;
+  display: block;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  transition: opacity 200ms ease;
+  border-radius: 30px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #676767;
+}
+
+/* OWL CAROUSEL DEFAULT THEME END */
 
 /* CLIENTS CAROUSEL */
 
@@ -65,65 +117,6 @@ div.clients-carousel .owl-nav {
 }
 
 /* CLIENTS CAROUSEL END */
-
-/* OWL CAROUSEL DEFAULT */
-
-.owl-theme .owl-nav {
-  margin-top: 10px;
-  text-align: center;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.owl-theme .owl-nav [class*="owl-"] {
-  color: #fff;
-  font-size: 14px;
-  margin: 5px;
-  padding: 4px 7px;
-  background: #c2c2c2;
-  display: inline-block;
-  cursor: pointer;
-  border-radius: 3px;
-}
-
-.owl-theme .owl-nav [class*="owl-"]:hover {
-  background: #676767;
-  color: #fff;
-  text-decoration: none;
-}
-
-.owl-theme .owl-nav .disabled {
-  opacity: 0.5;
-  cursor: default;
-}
-
-.owl-theme .owl-nav.disabled+.owl-dots {
-  margin-top: 10px;
-}
-
-.owl-theme .owl-dots .owl-dot {
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
-}
-
-.owl-theme .owl-dots .owl-dot span {
-  width: 10px;
-  height: 10px;
-  margin: 5px 7px;
-  background: #c2c2c2;
-  display: block;
-  -webkit-backface-visibility: visible;
-  backface-visibility: visible;
-  transition: opacity 200ms ease;
-  border-radius: 30px;
-}
-
-.owl-theme .owl-dots .owl-dot.active span,
-.owl-theme .owl-dots .owl-dot:hover span {
-  background: #676767;
-}
-
-/* OWL CAROUSEL DEFAULT THEME END */
 
 /* PRODUCT ARCHIVE GRID STYLES */
 
@@ -434,24 +427,6 @@ p.promo-category-title {
   -webkit-tap-highlight-color: transparent;
 }
 
-.owl-theme .owl-dots .owl-dot {
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
-}
-
-.owl-theme .owl-dots .owl-dot span {
-  width: 10px;
-  height: 10px;
-  margin: 5px 7px;
-  background: #8f8f8f;
-  display: block;
-  -webkit-backface-visibility: visible;
-  backface-visibility: visible;
-  transition: opacity 200ms ease;
-  border-radius: 30px;
-}
-
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
   background: #000000;
@@ -605,24 +580,6 @@ div.light .owl-nav [class*="owl-"]:hover {
 .owl-theme .owl-dots {
   text-align: center;
   -webkit-tap-highlight-color: transparent;
-}
-
-.owl-theme .owl-dots .owl-dot {
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
-}
-
-.owl-theme .owl-dots .owl-dot span {
-  width: 10px;
-  height: 10px;
-  margin: 5px 7px;
-  background: #ffffff;
-  display: block;
-  -webkit-backface-visibility: visible;
-  backface-visibility: visible;
-  transition: opacity 200ms ease;
-  border-radius: 30px;
 }
 
 .owl-theme .owl-dots .owl-dot.active span,
@@ -792,24 +749,6 @@ div.portfolio-carousel .owl-nav {
   -webkit-tap-highlight-color: transparent;
 }
 
-.owl-theme .owl-dots .owl-dot {
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
-}
-
-.owl-theme .owl-dots .owl-dot span {
-  width: 10px;
-  height: 10px;
-  margin: 5px 7px;
-  background: #c2c2c2;
-  display: block;
-  -webkit-backface-visibility: visible;
-  backface-visibility: visible;
-  transition: opacity 200ms ease;
-  border-radius: 30px;
-}
-
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
   background: #676767;
@@ -895,4 +834,8 @@ img.synced-big-img {
 
 .rotate-180 {
   transform: rotateY(180deg);
+}
+
+.owl-theme .owl-dots .owl-dot .dot-white span {
+  background: #ffffff;
 }

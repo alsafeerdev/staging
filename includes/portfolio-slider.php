@@ -29,7 +29,6 @@ $loop = new WP_Query($args); ?>
                         <h3 class="project-title"><?php the_title(); ?></h3>
                     </div>
                     <!-- Item Main Container END -->
-
                 </div>
             </a>
 
@@ -56,5 +55,5 @@ $loop = new WP_Query($args); ?>
     </svg>
 
 </div>
-
+<div class="owl-dots dot-white"></div>
 <?php wp_reset_postdata(); ?>
