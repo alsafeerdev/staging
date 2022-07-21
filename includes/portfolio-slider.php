@@ -13,10 +13,10 @@ $loop = new WP_Query($args); ?>
 
             <?php $feat_image_url = get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>
 
-               <a href="<?php echo get_permalink(); ?>" target="_blank" class="portfolio-link">
-            <!-- Item Main Container -->
-            <div data-blink-src='<?php echo $feat_image_url; ?>' class="item portfolio-item" style="background-position: center;">
-             
+            <a href="<?php echo get_permalink(); ?>" target="_blank" class="portfolio-link">
+                <!-- Item Main Container -->
+                <div data-blink-src='<?php echo $feat_image_url; ?>' class="item portfolio-item" style="background-position: center;">
+
                     <div class="project-category">
                         <?php
                         $terms = get_the_terms($post->ID, 'portfolio_category');
@@ -29,9 +29,9 @@ $loop = new WP_Query($args); ?>
                         <h3 class="project-title"><?php the_title(); ?></h3>
                     </div>
                     <!-- Item Main Container END -->
-              
-            </div>
-  </a>
+
+                </div>
+            </a>
 
         <?php endwhile; ?>
     <?php endif; ?>
@@ -47,7 +47,7 @@ $loop = new WP_Query($args); ?>
     </svg>
 
 </div>
-<div class="am-prev cust-nav">
+<div class="am-prev rotate-180 cust-nav">
     <svg version="1.1" id="nav-prev" class="nav-main" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 592 1000" style="enable-background:new 0 0 592 1000;" xml:space="preserve">
         <path d="M585.8,463.7c-4.8-12.2-11.9-23.1-21.2-32.4L161,27.7C143.1,9.8,119.4,0,94.2,0C69,0,45.3,9.8,27.4,27.7
 	C9.6,45.5-0.2,69.2-0.2,94.4c0,25.2,9.8,48.9,27.7,66.8L366,499.8L27.4,838.3C9.6,856.2-0.2,879.9-0.2,905.1

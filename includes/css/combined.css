@@ -28,10 +28,6 @@ svg.nav-main-clients-logo {
   fill: #707070;
 }
 
-.prev-btn-clients.clients-cust-nav {
-  transform: rotateY(180deg);
-}
-
 div.dark-dots .owl-dots .owl-dot span {
   background: #8f8f8f;
 }
@@ -100,7 +96,7 @@ div.clients-carousel .owl-nav {
   cursor: default;
 }
 
-.owl-theme .owl-nav.disabled + .owl-dots {
+.owl-theme .owl-nav.disabled+.owl-dots {
   margin-top: 10px;
 }
 
@@ -315,10 +311,6 @@ a.feat-prods-wrapper-link {
   border-radius: 5px;
 }
 
-.prev-btn-feat-prod.feat-prods-cust-nav {
-  transform: rotateY(180deg);
-}
-
 div.feat-prods-carousel .owl-nav {
   position: absolute;
   bottom: 30vh;
@@ -327,6 +319,7 @@ div.feat-prods-carousel .owl-nav {
   justify-content: space-between;
   align-items: center;
 }
+
 #feat-prods-carousel button.owl-prev {
   position: relative;
   right: 45px;
@@ -432,7 +425,7 @@ p.promo-category-title {
   border-radius: 5px;
 }
 
-.promo-cust-nav:hover > svg {
+.promo-cust-nav:hover>svg {
   fill: #000000;
 }
 
@@ -464,10 +457,6 @@ p.promo-category-title {
   background: #000000;
 }
 
-.prev-btn.promo-cust-nav {
-  transform: rotateY(180deg);
-}
-
 svg.promo-nav-main {
   width: 10px;
   fill: #ffffff;
@@ -495,10 +484,6 @@ a.promo-link {
 
 /* Promotions Slider Light BG */
 
-.prev-btn-light.promo-cust-nav {
-  transform: rotateY(180deg);
-}
-
 svg.promo-nav-main-light {
   width: 10px;
   fill: #707070;
@@ -508,7 +493,7 @@ div.dots-light .owl-dots .owl-dot span {
   background: #d1d1d1;
 }
 
-div.promotions-carousel > .owl-stage-outer {
+div.promotions-carousel>.owl-stage-outer {
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -613,7 +598,7 @@ div.light .owl-nav [class*="owl-"]:hover {
   border-radius: 5px;
 }
 
-.light-nav:hover > svg {
+.light-nav:hover>svg {
   fill: #ffffff;
 }
 
@@ -645,14 +630,6 @@ div.light .owl-nav [class*="owl-"]:hover {
   background: #000000;
 }
 
-.prev-btn-serv.service-cust-nav {
-  transform: rotateY(180deg);
-}
-
-.prev-btn-prod.service-cust-nav {
-  transform: rotateY(180deg);
-}
-
 svg.service-nav-main {
   width: 10px;
   fill: #707070;
@@ -678,7 +655,7 @@ a.service-link {
   text-decoration: none !important;
 }
 
-div.services-carousel > .owl-stage-outer {
+div.services-carousel>.owl-stage-outer {
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -691,16 +668,12 @@ div.services-carousel > .owl-stage-outer {
 
 /* Services Dark BG */
 
-.prev-btn-serv-dark.service-cust-nav {
-  transform: rotateY(180deg);
-}
-
 svg.dark-nav-icon {
   width: 10px;
   fill: #ffffff;
 }
 
-.dark-nav:hover > svg {
+.dark-nav:hover>svg {
   fill: #000000;
 }
 
@@ -779,10 +752,6 @@ div.portfolio-carousel .owl-dots {
   left: 30%;
 }
 
-.am-prev.cust-nav {
-  transform: rotateY(180deg);
-}
-
 svg.nav-main {
   width: 10px;
   fill: #c6c6c6;
@@ -814,7 +783,7 @@ div.portfolio-carousel .owl-nav {
   border-radius: 5px;
 }
 
-.cust-nav:hover > svg.nav-main {
+.cust-nav:hover>svg.nav-main {
   fill: #000000;
 }
 
@@ -845,6 +814,7 @@ div.portfolio-carousel .owl-nav {
 .owl-theme .owl-dots .owl-dot:hover span {
   background: #676767;
 }
+
 a.portfolio-link {
   text-decoration: none !important;
 }
@@ -892,7 +862,6 @@ img.synced-big-img {
 #big button.owl-prev {
   position: relative;
   right: -25px;
-  transform: rotateY(180deg);
 }
 
 #big button.owl-next {
@@ -921,3 +890,9 @@ img.synced-big-img {
 }
 
 /* IMAGE SLIDER WITH THUMBNAIL SYNC */
+
+/* COMMON STYLES FOR CAROUSELS */
+
+.rotate-180 {
+  transform: rotateY(180deg);
+}
