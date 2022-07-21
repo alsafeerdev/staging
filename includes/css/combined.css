@@ -69,11 +69,6 @@ img.client-logo {
   padding: 0px 20px;
 }
 
-svg.nav-main-clients-logo {
-  width: 10px;
-  fill: #707070;
-}
-
 div.dark-dots .owl-dots .owl-dot span {
   background: #8f8f8f;
 }
@@ -448,11 +443,6 @@ a.promo-link {
 
 /* Promotions Slider Light BG */
 
-svg.promo-nav-main-light {
-  width: 10px;
-  fill: #707070;
-}
-
 div.dots-light .owl-dots .owl-dot span {
   background: #d1d1d1;
 }
@@ -569,11 +559,6 @@ div.light .owl-nav [class*="owl-"]:hover {
 .owl-theme .owl-dots {
   text-align: center;
   -webkit-tap-highlight-color: transparent;
-}
-
-svg.service-nav-main {
-  width: 10px;
-  fill: #707070;
 }
 
 div.services-carousel .owl-dots {
@@ -820,4 +805,9 @@ img.synced-big-img {
 svg.svg-white-nav {
   width: 10px;
   fill: #ffffff;
+}
+
+svg.svg-dark-nav {
+  width: 10px;
+  fill: #707070;
 }
