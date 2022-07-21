@@ -34,6 +34,7 @@ $loop = new WP_Query($args); ?>
 
         <?php endwhile; ?>
     <?php endif; ?>
+    <div class="owl-dots dot-white"></div>
     <!-- Main Container  END-->
 </div>
 <!-- Custom Navigation -->
@@ -55,5 +56,4 @@ $loop = new WP_Query($args); ?>
     </svg>
 
 </div>
-<div class="owl-dots dot-white"></div>
 <?php wp_reset_postdata(); ?>
