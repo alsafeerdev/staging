@@ -10,7 +10,7 @@ jQuery(document).ready(function () {
     center: true,
     dots: true,
     dotsEach: 3,
-    autoplay: false,
+    autoplay: true,
     nav: true,
     autoplaySpeed: 2500,
     slideTransition: 'ease',
