@@ -34,7 +34,9 @@ $loop = new WP_Query($args); ?>
 
         <?php endwhile; ?>
     <?php endif; ?>
-    <div class="owl-dots dot-white"></div>
+    <div class="owl-dots dot-white">
+        <button role="button" class="owl-dot"><span></span></button>
+    </div>
     <!-- Main Container  END-->
 </div>
 <!-- Custom Navigation -->
