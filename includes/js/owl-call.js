@@ -19,7 +19,6 @@ jQuery(document).ready(function () {
     animateOut: 'fadeOut',
     animateIn: 'fadeIn',
     navText: [jQuery('.am-prev'), jQuery('.am-next')],
-    dotsContainer: '.dot-white',
     responsiveClass: true,
     responsive: {
       0: {
