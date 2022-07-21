@@ -838,3 +838,7 @@ img.synced-big-img {
 .dot-white span {
   background: #ffffff;
 }
+
+.dot-white .active span {
+  background: #ffffff;
+}
