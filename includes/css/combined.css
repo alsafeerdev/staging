@@ -426,11 +426,6 @@ p.promo-category-title {
   background: #000000;
 }
 
-svg.promo-nav-main {
-  width: 10px;
-  fill: #ffffff;
-}
-
 div.promotions-carousel .owl-dots {
   margin-top: 35px;
 }
@@ -576,11 +571,6 @@ div.light .owl-nav [class*="owl-"]:hover {
   -webkit-tap-highlight-color: transparent;
 }
 
-.owl-theme .owl-dots .owl-dot.active span,
-.owl-theme .owl-dots .owl-dot:hover span {
-  background: #000000;
-}
-
 svg.service-nav-main {
   width: 10px;
   fill: #707070;
@@ -618,12 +608,6 @@ div.services-carousel>.owl-stage-outer {
 }
 
 /* Services Dark BG */
-
-svg.dark-nav-icon {
-  width: 10px;
-  fill: #ffffff;
-}
-
 .dark-nav:hover>svg {
   fill: #000000;
 }
@@ -831,4 +815,9 @@ img.synced-big-img {
 
 .dot-white .active span {
   background: #ffffff;
+}
+
+.svg.svg-white-nav {
+  width: 10px;
+  fill: #ffffff;
 }
