@@ -835,6 +835,6 @@ img.synced-big-img {
   transform: rotateY(180deg);
 }
 
-.owl-theme .owl-dots .owl-dot .dot-white span {
+.dot-white span {
   background: #ffffff;
 }

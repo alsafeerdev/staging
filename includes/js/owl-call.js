@@ -19,6 +19,10 @@ jQuery(document).ready(function () {
     animateOut: 'fadeOut',
     animateIn: 'fadeIn',
     navText: [jQuery('.am-prev'), jQuery('.am-next')],
+    onInitialized: function(event){
+      let element = jQuery(event.target);
+      element.find('.owl-dots').addClass('dot-white');
+    },
     responsiveClass: true,
     responsive: {
       0: {
