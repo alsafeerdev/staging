@@ -27,7 +27,7 @@ $loop = new WP_Query($args); ?>
                         <p class="feat-prods-exerpt letter-spacing-0-5 fw-normal">
                             <?php echo get_the_excerpt(); ?>
                         </p>
-                        <p class="feat-prods-know-more">Learn More</p>
+                        <p class="feat-prods-know-more letter-spacing-0-5">Learn More</p>
                     </div>
                 </a>
             </div>

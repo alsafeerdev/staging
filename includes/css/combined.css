@@ -236,12 +236,10 @@ h3.feat-prods-title {
 }
 
 p.feat-prods-exerpt {
-  letter-spacing: 0.05em;
   min-height: 100px;
 }
 
 p.feat-prods-know-more {
-  letter-spacing: 0.05em;
   color: #fff;
   border-radius: 30px;
   background: #fd746c;
