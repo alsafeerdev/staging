@@ -30,12 +30,6 @@ Always do changes on main CSS file and Update on this file to avoid confutions
   border-radius: 3px;
 }
 
-.owl-theme .owl-nav [class*="owl-"]:hover {
-  background: #676767;
-  color: #fff;
-  text-decoration: none;
-}
-
 .owl-theme .owl-nav .disabled {
   opacity: 0.5;
   cursor: default;
@@ -56,6 +50,13 @@ Always do changes on main CSS file and Update on this file to avoid confutions
   backface-visibility: visible;
   transition: opacity 200ms ease;
   border-radius: 30px;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: #ffffff;
+  border-radius: 5px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 /* OWL CAROUSEL DEFAULT THEME END */
@@ -245,11 +246,6 @@ a.feat-prods-wrapper-link {
   display: none;
 }
 
-.owl-theme .owl-nav [class*="owl-"]:hover {
-  background: #ececec;
-  border-radius: 5px;
-}
-
 div.feat-prods-carousel .owl-nav {
   position: absolute;
   bottom: 30vh;
@@ -303,22 +299,12 @@ p.promo-know-more {
   margin: 0;
 }
 
-p.promo-know-more:hover {
-  background: #f24032;
-  box-shadow: 0px 0px 16px -6px #000;
-}
-
 p.promo-category-title {
   background: #f4372b;
   padding: 5px 10px;
   position: absolute;
   top: 20px;
   right: 20px;
-}
-
-.owl-theme .owl-nav [class*="owl-"]:hover {
-  background: rgb(255, 255, 255);
-  border-radius: 5px;
 }
 
 .promo-cust-nav:hover>svg {
@@ -411,16 +397,6 @@ p.service-exerpt {
 
 p.service-know-more {
   margin: 0;
-}
-
-p.service-know-more:hover {
-  background: #f24032;
-  box-shadow: 0px 0px 16px -6px #000;
-}
-
-.owl-theme .owl-nav [class*="owl-"]:hover {
-  background: #ececec;
-  border-radius: 5px;
 }
 
 div.light .owl-nav [class*="owl-"]:hover {
@@ -559,13 +535,12 @@ div.portfolio-carousel .owl-nav {
   width: 97%;
 }
 
-.owl-theme .owl-nav [class*="owl-"]:hover {
-  background: #fff;
-  border-radius: 5px;
+.cust-nav:hover>svg.hover-black {
+  fill: #000000;
 }
 
-.cust-nav:hover>svg.nav-main {
-  fill: #000000;
+.cust-nav:hover>svg.hover-white {
+  fill: #ffffff;
 }
 
 .owl-theme .owl-dots {
