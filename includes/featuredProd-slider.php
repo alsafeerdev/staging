@@ -17,7 +17,7 @@ $loop = new WP_Query($args); ?>
             $image_id = get_post_thumbnail_id();
             $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
             ?>
-            <div class="feat-prods-container text-center">
+            <div class="feat-prods-container bg-white text-center">
                 <a href="<?php echo get_permalink(); ?>" class="feat-prods-wrapper-link" target="_blank">
                     <div class="feat-prods-img-container">
                         <img data-blink-src="<?php echo the_post_thumbnail_url('full'); ?>" alt="<?php echo $image_alt ?>" srcset="" class="feat-prods-feat-image">
