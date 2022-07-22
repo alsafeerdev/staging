@@ -23,8 +23,8 @@ $loop = new WP_Query($args); ?>
                         <img data-blink-src="<?php echo the_post_thumbnail_url('full'); ?>" alt="<?php echo $image_alt ?>" srcset="" class="feat-prods-feat-image">
                     </div>
                     <div class="feat-prods-content-container">
-                        <h3 class="feat-prods-title"> <?php the_title(); ?></h3>
-                        <p class="feat-prods-exerpt">
+                        <h3 class="feat-prods-title letter-spacing-0-5 fm-pt-serif fw-bold fs-18"> <?php the_title(); ?></h3>
+                        <p class="feat-prods-exerpt letter-spacing-0-5 fm-normal">
                             <?php echo get_the_excerpt(); ?>
                         </p>
                         <p class="feat-prods-know-more">Learn More</p>

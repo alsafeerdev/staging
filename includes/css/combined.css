@@ -232,21 +232,11 @@ img.feat-prods-feat-image {
 }
 
 h3.feat-prods-title {
-  font-family: "PT Serif";
-  font-weight: bold;
-  font-size: 18px;
-  letter-spacing: 0.05em;
-  color: #3c3c3c;
   min-height: 45px;
 }
 
 p.feat-prods-exerpt {
-  font-family: "PT Sans";
-  font-weight: normal;
-  font-size: 16px;
   letter-spacing: 0.05em;
-  line-height: 24px;
-  color: #3c3c3c;
   min-height: 100px;
 }
 
@@ -814,7 +804,6 @@ div.nav-middle .owl-nav {
 
 .fm-pt-serif {
   font-family: "PT Serif";
-  letter-spacing: 0.05em;
 }
 
 .fw-bold {
@@ -828,3 +817,9 @@ div.nav-middle .owl-nav {
 .color-gray {
   color: #3c3c3c;
 }
+
+.letter-spacing-0-5 {
+  letter-spacing: 0.05em;
+}
+
+.fs-18 {}
