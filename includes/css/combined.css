@@ -806,3 +806,25 @@ div.nav-middle .owl-nav {
   display: flex;
   justify-content: space-between;
 }
+
+.fm-pt-sans {
+  font-family: "PT Sans";
+  letter-spacing: 0.05em;
+}
+
+.fm-pt-serif {
+  font-family: "PT Serif";
+  letter-spacing: 0.05em;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.fw-normal {
+  font-weight: normal;
+}
+
+.color-gray {
+  color: #3c3c3c;
+}
