@@ -23,17 +23,17 @@ $loop = new WP_Query($args); ?>
                         <img data-blink-src="<?php echo the_post_thumbnail_url('full'); ?>" alt="<?php echo $image_alt ?>" srcset="" class="promo-feat-image">
                     </div>
                     <div class="promo-content">
-                        <h3 class="promo-title"> <?php the_title(); ?></h3>
-                        <p class="promo-exerpt">
+                        <h3 class="promo-title title-fs-18 letter-spacing-0-5 fm-pt-serif fw-bold"> <?php the_title(); ?></h3>
+                        <p class="promo-exerpt letter-spacing-0-5 fw-normal">
                             <?php echo get_the_excerpt(); ?>
                         </p>
-                        <p class="promo-know-more">Read More</p>
+                        <p class="promo-know-more letter-spacing-0-5 color-white border-radius-30 btn-default">Read More</p>
                     </div>
                     <div class="promo-cat">
                         <?php
                         $promo_cat = get_field("promotion_category");
                         ?>
-                        <p class="promo-category-title"><?php echo $promo_cat; ?></p>
+                        <p class="promo-category-title letter-spacing-0-5 color-white border-radius-30"><?php echo $promo_cat; ?></p>
                     </div>
                 </a>
             </div>

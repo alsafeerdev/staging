@@ -402,23 +402,10 @@ img.service-feat-image {
 }
 
 h3.service-title {
-  font-family: "PT Serif";
-  font-weight: bold;
-  font-size: 18px;
-  letter-spacing: 0.05em;
-  text-align: center;
-  color: #3c3c3c;
   min-height: 45px;
 }
 
 p.service-exerpt {
-  font-family: "PT Sans";
-  font-weight: normal;
-  font-size: 16px;
-  letter-spacing: 0.05em;
-  line-height: 24px;
-  text-align: center;
-  color: #3c3c3c;
   min-height: 97px;
 }
 

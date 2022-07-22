@@ -23,11 +23,11 @@ $loop = new WP_Query($args); ?>
                         <img data-blink-src="<?php echo the_post_thumbnail_url('full'); ?>" alt="<?php echo $image_alt ?>" srcset="" class="service-feat-image">
                     </div>
                     <div class="service-content text-center">
-                        <h3 class="service-title"> <?php the_title(); ?></h3>
-                        <p class="service-exerpt">
+                        <h3 class="service-title fm-pt-serif fw-bold title-fs-18 letter-spacing-0-5"> <?php the_title(); ?></h3>
+                        <p class="service-exerpt fw-normal letter-spacing-0-5">
                             <?php echo get_the_excerpt(); ?>
                         </p>
-                        <p class="service-know-more">Learn More</p>
+                        <p class="service-know-more letter-spacing-0-5 color-white">Learn More</p>
                     </div>
                 </a>
             </div>
