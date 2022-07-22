@@ -822,4 +822,6 @@ div.nav-middle .owl-nav {
   letter-spacing: 0.05em;
 }
 
-.fs-18 {}
+.fs-18 {
+  font-size: 18px;
+}
