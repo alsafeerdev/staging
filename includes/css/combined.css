@@ -328,31 +328,7 @@ img.promo-feat-image {
   background: #fff;
 }
 
-h3.promo-title {
-  font-family: "PT Serif";
-  font-weight: bold;
-  font-size: 18px;
-  letter-spacing: 0.05em;
-  text-align: left;
-  color: #3c3c3c;
-}
-
-p.promo-exerpt {
-  font-family: "PT Sans";
-  font-weight: normal;
-  font-size: 16px;
-  letter-spacing: 0.05em;
-  line-height: 24px;
-  text-align: left;
-  color: #3c3c3c;
-}
-
 p.promo-know-more {
-  font-family: "PT Sans";
-  font-weight: bold;
-  font-size: 16px;
-  letter-spacing: 0.05em;
-  text-align: center;
   color: #fff;
   border-radius: 30px;
   background: #fd746c;
@@ -367,12 +343,6 @@ p.promo-know-more:hover {
 }
 
 p.promo-category-title {
-  font-family: "PT Sans";
-  font-weight: 600;
-  font-size: 14px;
-  letter-spacing: 0.05em;
-  text-align: center;
-  color: #fff;
   border-radius: 30px;
   background: #f4372b;
   padding: 5px 10px;
@@ -785,6 +755,10 @@ svg.svg-dark-nav {
 
 .bg-white {
   background: #ffffff;
+}
+
+.color-white {
+  color: #ffffff;
 }
 
 div.nav-middle .owl-nav {
