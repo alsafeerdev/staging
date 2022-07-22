@@ -804,14 +804,6 @@ div.nav-middle .owl-nav {
   font-family: "PT Serif";
 }
 
-.fw-bold {
-  font-weight: bold;
-}
-
-.fw-normal {
-  font-weight: normal;
-}
-
 .color-gray {
   color: #3c3c3c;
 }
@@ -820,6 +812,6 @@ div.nav-middle .owl-nav {
   letter-spacing: 0.05em;
 }
 
-.fs-18 {
+h3.title-fs-18 {
   font-size: 18px;
 }
