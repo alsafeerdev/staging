@@ -222,7 +222,6 @@ img.feat-prods-feat-image {
 }
 
 .feat-prods-content-container {
-  background: #ffffff;
   padding: 26px 15px 45px 15px;
   display: flex;
   flex-direction: column;
@@ -429,14 +428,6 @@ div.promotions-carousel .owl-dots .owl-dot span {
   background: #ffffff;
 }
 
-div.promotions-carousel .owl-nav {
-  position: absolute;
-  top: 25vh;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
 a.promo-link {
   text-decoration: none !important;
 }
@@ -567,14 +558,6 @@ div.services-carousel .owl-dots {
 
 div.light .owl-dots .owl-dot span {
   background: #d1d1d1;
-}
-
-div.services-carousel .owl-nav {
-  position: absolute;
-  top: 25vh;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
 }
 
 a.service-link {
@@ -810,4 +793,16 @@ svg.svg-white-nav {
 svg.svg-dark-nav {
   width: 10px;
   fill: #707070;
+}
+
+.bg-white {
+  background: #ffffff;
+}
+
+div.nav-middle .owl-nav {
+  position: absolute;
+  top: 25vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
