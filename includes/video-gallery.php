@@ -1,11 +1,8 @@
 <div class="container mb-5">
     <div class="row">
         <?php
-
         if (have_rows('video_gallery')) :
             while (have_rows('video_gallery')) : the_row();
-
-                // Layout 1.
                 $webm = get_sub_field('webm');
                 $mp4 = get_sub_field('mp4');
                 $fallback = get_sub_field('fallback_image') ?>
@@ -19,7 +16,6 @@
                         </video>
                     </div>
                 </div>
-
         <?php endwhile;
         endif; ?>
     </div>
