@@ -9,7 +9,9 @@
                 <?php
 
                 $vid_webm = $rows[0];
+                $webm_url = $vid_webm['url'];
                 $vid_mp4 = $rows[1];
+                $mp4_url = $vid_mp4['url'];
                 ?>
                 <div class="col-md-6 mb-3">
                     <div class="vid-container" style="width:fit-content">
