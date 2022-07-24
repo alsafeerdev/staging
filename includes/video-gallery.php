@@ -8,8 +8,8 @@
 
                 <?php
 
-                $vid_webm = get_sub_field('webm');
-                $vid_mp4 = get_sub_field('mp4');
+                $vid_webm = $rows[0];
+                $vid_mp4 = $rows[1];
                 ?>
                 <div class="col-md-6 mb-3">
                     <div class="vid-container" style="width:fit-content">
