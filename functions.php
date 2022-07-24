@@ -251,3 +251,5 @@ function wpf_dev_check_for_urls($field_id, $field_submit, $form_data)
 
 add_action('wpforms_process_validate_textarea', 'wpf_dev_check_for_urls', 10, 3);
 add_action('wpforms_process_validate_text', 'wpf_dev_check_for_urls', 10, 3);
+
+// Resync
