@@ -7,10 +7,11 @@
 
                 // Layout 1.
                 $webm = get_sub_field('webm');
-                $mp4 = get_sub_field('mp4'); ?>
+                $mp4 = get_sub_field('mp4');
+                $fallback = get_sub_field('fallback_image') ?>
 
                 <div class="col-md-4 mb-3">
-                    <div class="vid-container" style="width:fit-content">
+                    <div class="vid-container" style="width:fit-content" poster="<?php echo $fallback; ?>">
                         <video width="600" controls controlsList="nodownload">
                             <source src="<?php echo $webm; ?>" type="video/webm">
                             <source src="<?php echo $mp4; ?>" type="video/mp4">
