@@ -24,10 +24,10 @@ $loop = new WP_Query($args); ?>
                     </div>
                     <div class="service-content text-center">
                         <h3 class="service-title fm-pt-serif fw-bold title-fs-18 letter-spacing-0-5"> <?php the_title(); ?></h3>
-                        <p class="service-exerpt letter-spacing-0-5 color-white border-radius-30 btn-default">
+                        <p class="service-exerpt letter-spacing-0-5 fw-normal">
                             <?php echo get_the_excerpt(); ?>
                         </p>
-                        <p class="service-know-more letter-spacing-0-5 color-white">Learn More</p>
+                        <p class="service-know-more letter-spacing-0-5 color-white border-radius-30 btn-default">Learn More</p>
                     </div>
                 </a>
             </div>
