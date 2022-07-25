@@ -161,10 +161,6 @@ span.page-numbers {
   border-radius: 30px;
 }
 
-ul.cat-list {
-  margin-left: 0;
-}
-
 span.page-numbers.prev {
   display: none;
 }
