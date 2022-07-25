@@ -399,10 +399,6 @@ div.light .owl-nav [class*="owl-"]:hover {
   border-radius: 5px;
 }
 
-.light-nav:hover>svg {
-  fill: #ffffff;
-}
-
 .owl-theme .owl-dots {
   text-align: center;
   -webkit-tap-highlight-color: transparent;
@@ -427,9 +423,6 @@ a.service-link {
 }
 
 /* Services Dark BG */
-.dark-nav:hover>svg {
-  fill: #000000;
-}
 
 #services-carousel button.owl-prev {
   position: relative;
