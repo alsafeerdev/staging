@@ -389,11 +389,6 @@ div.light .owl-nav [class*="owl-"]:hover {
   border-radius: 5px;
 }
 
-.owl-theme .owl-dots {
-  text-align: center;
-  -webkit-tap-highlight-color: transparent;
-}
-
 div.services-carousel .owl-dots {
   margin-top: 35px;
 }
@@ -514,11 +509,6 @@ div.portfolio-carousel .owl-nav {
 
 .cust-nav:hover>svg.hover-white {
   fill: #ffffff;
-}
-
-.owl-theme .owl-dots {
-  text-align: center;
-  -webkit-tap-highlight-color: transparent;
 }
 
 a.portfolio-link {
