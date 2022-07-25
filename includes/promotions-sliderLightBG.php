@@ -17,7 +17,7 @@ $loop = new WP_Query($args); ?>
             $image_id = get_post_thumbnail_id();
             $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
             ?>
-            <div class="promotion-container">
+            <div class="promotion-container slider-card">
                 <a href="<?php echo get_permalink(); ?>" class="promo-link" target="_blank">
                     <div class="promo-image-container">
                         <img data-blink-src="<?php echo the_post_thumbnail_url('full'); ?>" alt="<?php echo $image_alt ?>" srcset="" class="promo-feat-image">

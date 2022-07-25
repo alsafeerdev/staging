@@ -278,11 +278,6 @@ img.promo-feat-image {
   border-radius: 10px 10px 0px 0px;
 }
 
-.promotion-container {
-  border-radius: 10px;
-  box-shadow: 0px 0px 12px -3px #00000070;
-}
-
 p.promo-know-more {
   width: fit-content;
   margin: 0;
@@ -387,12 +382,6 @@ div.light .owl-dots .owl-dot span {
 
 a.service-link {
   text-decoration: none !important;
-}
-
-.services-container {
-  height: 100%;
-  border-radius: 10px;
-  box-shadow: 0px 0px 12px -3px #00000070;
 }
 
 /* Services Dark BG */
@@ -664,4 +653,9 @@ div.py-10p>.owl-stage-outer {
   padding: 26px 20px 36px 20px;
   border-radius: 0px 0px 10px 10px;
   background: #fff;
+}
+
+.slider-card {
+  border-radius: 10px;
+  box-shadow: 0px 0px 12px -3px #00000070;
 }
