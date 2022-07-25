@@ -283,12 +283,6 @@ img.promo-feat-image {
   box-shadow: 0px 0px 12px -3px #00000070;
 }
 
-.promo-content {
-  padding: 26px 20px 36px 20px;
-  border-radius: 0px 0px 10px 10px;
-  background: #fff;
-}
-
 p.promo-know-more {
   width: fit-content;
   margin: 0;
@@ -360,12 +354,6 @@ div.dots-light .owl-dots .owl-dot span {
 
 img.service-feat-image {
   border-radius: 10px 10px 0px 0px;
-}
-
-.service-content {
-  padding: 26px 20px 36px 20px;
-  border-radius: 0px 0px 10px 10px;
-  background: #fff;
 }
 
 .service-content.text-center {
@@ -673,4 +661,7 @@ div.py-10p>.owl-stage-outer {
   align-content: center;
   align-items: center;
   justify-content: flex-start;
+  padding: 26px 20px 36px 20px;
+  border-radius: 0px 0px 10px 10px;
+  background: #fff;
 }

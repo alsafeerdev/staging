@@ -22,7 +22,7 @@ $loop = new WP_Query($args); ?>
                     <div class="promo-image-container">
                         <img data-blink-src="<?php echo the_post_thumbnail_url('full'); ?>" alt="<?php echo $image_alt ?>" srcset="" class="promo-feat-image">
                     </div>
-                    <div class="promo-content">
+                    <div class="promo-content content-container">
                         <h3 class="promo-title title-fs-18 letter-spacing-0-5 fm-pt-serif fw-bold"> <?php the_title(); ?></h3>
                         <p class="promo-exerpt letter-spacing-0-5 fw-normal">
                             <?php echo get_the_excerpt(); ?>
