@@ -22,7 +22,7 @@ $loop = new WP_Query($args); ?>
                     <div class="service-image-container">
                         <img data-blink-src="<?php echo the_post_thumbnail_url('full'); ?>" alt="<?php echo $image_alt ?>" class="service-feat-image">
                     </div>
-                    <div class="service-content text-center">
+                    <div class="service-content content-container text-center">
                         <h3 class="service-title fm-pt-serif fw-bold title-fs-18 letter-spacing-0-5"> <?php the_title(); ?></h3>
                         <p class="service-exerpt letter-spacing-0-5 fw-normal">
                             <?php echo get_the_excerpt(); ?>

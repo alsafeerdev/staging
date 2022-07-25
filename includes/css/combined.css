@@ -208,11 +208,6 @@ img.feat-prods-feat-image {
 
 .feat-prods-content-container {
   padding: 26px 15px 45px 15px;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  justify-content: flex-start;
   min-height: 320px;
 }
 
@@ -374,11 +369,6 @@ img.service-feat-image {
 }
 
 .service-content.text-center {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  justify-content: flex-start;
   min-height: 270px;
 }
 
@@ -685,4 +675,12 @@ h3.title-fs-18 {
 div.py-10p>.owl-stage-outer {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
 }
