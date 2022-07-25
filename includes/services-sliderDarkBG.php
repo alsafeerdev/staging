@@ -8,7 +8,7 @@ $loop = new WP_Query($args); ?>
 
 <!-- Main Container -->
 
-<div id="services-carousel-dark" class="owl-carousel dark owl-theme services-carousel">
+<div id="services-carousel-dark" class="owl-carousel dark owl-theme py-10p services-carousel">
     <?php if ($loop->have_posts()) : ?>
         <?php while ($loop->have_posts()) :
             $loop->the_post(); ?>
